@@ -170,11 +170,69 @@ The total propulsive efficiency and the thrust are plotted against airspeed in F
 \end{figure}
 
 \subsection{Design Approach}
-For our mission plan, it is critical that we climb to an altitude of $400 ft$ as fast as we can to efficiently scout the search area and sight all four targets as soon as we can. Hence, the rate of climb for our airplane is of crucial importance. In addition to this, the endurance of our aircraft is also very important since the allowed battery consumption is very limiting. We designed our aircraft mainly based on these two considerations.
 \label{DsignAppr}
+
+For our mission plan, it is critical that we climb to an altitude of $400 ft$ as fast as we can to efficiently scout the search area and sight all four targets as soon as we can. Hence, the rate of climb for our airplane is of crucial importance. In addition to this, the endurance of our aircraft is also very important since the allowed battery consumption is very limiting. We designed our aircraft mainly based on these two considerations.
+
+First, we obtained the drag polar for a generic 2D semi-symmetrical airfoil section (Clark-Y) in XFLR5 that we used as our first estimates for our full aircraft drag polar. From some preliminary weight estimates, we allotted a $450g$ weight budget for our aircraft. Using this weight and the 2D drag polars data, we found the wing area that would maximize our rate of climb using the data from the analysis of the propulsion system. We chose a taper ratio of $0.5$ for our wing. This choice was influenced by structural constraints on the total root bending moment and the stall characteristics so that in the event of a stalled aircraft, aileron control is not lost. Then, we assumed an aspect ratio of $6.8$ (that of the Bixler 2). This allowed us to construct a wing in XFLR5 to get a more realistic drag polar. This process was repeated iteratively until convergence. However, we changed our aspect ratio to $10$ since we felt it would be possible to make a wing with that aspect ratio that is still rigid enough.
+
+After this preliminary analysis, we did the same analysis with different airfoil sections and chose the SD-7037 airfoil section since the predicted $(L/D)_{max}$ was the highest for this airfoil. The effect of the choice of airfoil section on the climb performance was found to be minimal and hence we were able to perform a decoupled analysis for the choice of airfoil sections.
+
+Then, we calculated the horizontal stabilizer area from considerations of the longitudinal stability that were backed by Vortex Lattice Model predictions. The vertical stabilizer size was chosen based on previous aircraft designs similar to our aircraft and then validated using stability analysis in AVL.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/SkynetV3_XFLR_pic.png}
+  \caption{VLM model of our design in XFLR5}\label{fig:vlm-design}
+\end{figure}
+
 \subsection{Performance Characteristics}
 \label{PerfChar}
-\subsection{Flight Performance}
+
+The different performance parameters of our design as predicted by XFLR5 are shown in Figures~\ref{fig:cl-alpha} to \ref{fig:power-cons}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/CL_vs_alpha.png}
+  \caption{$C_L$ vs $\alpha$}\label{fig:cl-alpha}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/CL_vs_CD.png}
+  \caption{Drag polar}\label{fig:cl-cd}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/CL-CD_vs_V.png}
+  \caption{$C_L/C_D$ vs $v_\infty$}\label{fig:LD-v}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/Cm_vs_alpha.png}
+  \caption{$C_m$ vs $\alpha$}\label{fig:cm-alpha}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS3/power_consumption.png}
+  \caption{$P_{level}$ vs airspeed}\label{fig:power-cons}
+\end{figure}
+
+A comparison of the performance parameters estimated from our analysis with the performance parameters obtained from measured data during flight tests in shown in Table~\ref{table:Compar}.
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{} & \textbf{$C_L\;max$} & \textbf{$(L/D)_{max}$} & \textbf{$P_{level}$ $(9.5 \; ms^{-1})$} & $P_{level}$ $(13.5 \; ms^{-1})$  & \textbf{$P_{max\;climb}$} \\ 
+\hline
+\textbf{Estimated} & $1.14$ & $19.0$ & $11.29\;watts$ & $28.62\;watts$ & $34.12\;watts$  \\
+\textbf{Measured}  & $0.73$ & $16.3$ & $7.45\;watts$ & $26.47\;watts$ & $39.98\;watts$  \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Estimated vs. measured flight performance parameters}
+\label{table:Compar} 
+\end{table}
 \label{AeroFlightPerf}
 % AKSHAY & SRAVYA
 % Include in this section a Three View Drawing of the Plane
@@ -196,7 +254,7 @@ For our mission plan, it is critical that we climb to an altitude of $400 ft$ as
 \label{ProtoConsAppr}
 \subsubsection{Mk-I "The Red Baron"}
 \label{mk1}
-\subsubsection{Mk-II "Big Boy"}
+\subsubsection{Mk-II "The Pig"}
 \label{mk2}
 \subsubsection{Mk-III.1}
 \label{mk3.1}
