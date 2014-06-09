@@ -4,29 +4,34 @@
 \contentsline {subsection}{\numberline {2.1}Team Structure}{2}
 \contentsline {subsection}{\numberline {2.2}Team Communication \& Logistics}{2}
 \contentsline {section}{\numberline {3}Mission}{2}
-\contentsline {section}{\numberline {4}Airframe Design}{2}
-\contentsline {subsection}{\numberline {4.1}Propulsion System Analysis}{2}
-\contentsline {subsubsection}{\numberline {4.1.1}Propeller Analysis}{3}
-\contentsline {subsubsection}{\numberline {4.1.2}Motor Analysis}{3}
-\contentsline {subsubsection}{\numberline {4.1.3}Propeller and Motor Matching}{3}
-\contentsline {subsection}{\numberline {4.2}Design Approach}{4}
-\contentsline {subsection}{\numberline {4.3}Performance Characteristics}{5}
-\contentsline {section}{\numberline {5}Controls}{6}
-\contentsline {subsection}{\numberline {5.1}Control Strategy}{6}
-\contentsline {subsection}{\numberline {5.2}Flight Performance}{6}
-\contentsline {section}{\numberline {6}Fabrication}{6}
-\contentsline {subsection}{\numberline {6.1}Prototype Construction Approach}{6}
-\contentsline {subsubsection}{\numberline {6.1.1}Mk-I "The Red Baron"}{6}
-\contentsline {subsubsection}{\numberline {6.1.2}Mk-II "The Pig"}{6}
-\contentsline {subsubsection}{\numberline {6.1.3}Mk-III.1}{6}
-\contentsline {subsubsection}{\numberline {6.1.4}Mk-III.2 "Ronald McDonald"}{6}
-\contentsline {subsubsection}{\numberline {6.1.5}Mk-III.2 "Terminator"}{6}
-\contentsline {subsubsection}{\numberline {6.1.6}Mk-III.2 "The UltraLight"}{6}
-\contentsline {section}{\numberline {7}Flight Testing}{6}
-\contentsline {subsection}{\numberline {7.1}Flight Test Approach}{6}
-\contentsline {subsection}{\numberline {7.2}Simulation vs. Actual Tests}{6}
-\contentsline {section}{\numberline {8}Mission Flight Results}{6}
-\contentsline {subsection}{\numberline {8.1}Official Flight Results}{6}
-\contentsline {subsection}{\numberline {8.2}Analysis of Flight Data}{9}
-\contentsline {section}{\numberline {9}Conclusions \& Lessons Learned}{9}
-\contentsline {section}{\numberline {10}Future AA241X Recommendations}{9}
+\contentsline {subsection}{\numberline {3.1}Approach via identification of score components}{3}
+\contentsline {subsection}{\numberline {3.2}Phase-1: An initial passive path to sight all targets with probability 1}{3}
+\contentsline {subsection}{\numberline {3.3}Phase-2: An active path to refine the estimates of sighted targets}{4}
+\contentsline {subsection}{\numberline {3.4}Target position estimation scheme}{8}
+\contentsline {subsection}{\numberline {3.5}Statistical measure of score and mission time}{11}
+\contentsline {section}{\numberline {4}Airframe Design}{13}
+\contentsline {subsection}{\numberline {4.1}Propulsion System Analysis}{13}
+\contentsline {subsubsection}{\numberline {4.1.1}Propeller Analysis}{13}
+\contentsline {subsubsection}{\numberline {4.1.2}Motor Analysis}{13}
+\contentsline {subsubsection}{\numberline {4.1.3}Propeller and Motor Matching}{14}
+\contentsline {subsection}{\numberline {4.2}Design Approach}{14}
+\contentsline {subsection}{\numberline {4.3}Performance Characteristics}{16}
+\contentsline {section}{\numberline {5}Controls}{20}
+\contentsline {subsection}{\numberline {5.1}Control Strategy}{20}
+\contentsline {subsection}{\numberline {5.2}Flight Performance}{20}
+\contentsline {section}{\numberline {6}Fabrication}{20}
+\contentsline {subsection}{\numberline {6.1}Prototype Construction Approach}{20}
+\contentsline {subsubsection}{\numberline {6.1.1}Mk-I "The Red Baron"}{20}
+\contentsline {subsubsection}{\numberline {6.1.2}Mk-II "The Pig"}{20}
+\contentsline {subsubsection}{\numberline {6.1.3}Mk-III.1}{20}
+\contentsline {subsubsection}{\numberline {6.1.4}Mk-III.2 "Ronald McDonald"}{20}
+\contentsline {subsubsection}{\numberline {6.1.5}Mk-III.2 "Terminator"}{20}
+\contentsline {subsubsection}{\numberline {6.1.6}Mk-III.2 "The UltraLight"}{20}
+\contentsline {section}{\numberline {7}Flight Testing}{20}
+\contentsline {subsection}{\numberline {7.1}Flight Test Approach}{20}
+\contentsline {subsection}{\numberline {7.2}Simulation vs. Actual Tests}{20}
+\contentsline {section}{\numberline {8}Mission Flight Results}{20}
+\contentsline {subsection}{\numberline {8.1}Official Flight Results}{20}
+\contentsline {subsection}{\numberline {8.2}Analysis of Flight Data}{20}
+\contentsline {section}{\numberline {9}Conclusions \& Lessons Learned}{20}
+\contentsline {section}{\numberline {10}Future AA241X Recommendations}{20}
