@@ -3,6 +3,8 @@
 \usepackage[english]{babel}
 \usepackage{fullpage}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 %\def\wl{\par \vspace{\baselineskip}}
 
@@ -93,9 +95,82 @@ Data Storage and problem set completion was made possible via our Google Drive, 
 \label{Mission}
 % KARTIKEY
 
-\section{Vehicle}
+\section{Airframe Design}
 \label{Vehicle}
+
+\subsection{Propulsion System Analysis}
+
+The propulsion system analysis was performed in three parts:
+\begin{enumerate}
+\item Propeller analysis
+\item Motor analysis
+\item Propeller and Motor matching
+\end{enumerate}
+
+\subsubsection{Propeller Analysis}
+
+For the propeller analysis, we used wind tunnel experimental data from the UIUC Propeller Data Site \footnote{http://aerospace.illinois.edu/m-selig/props/propDB.html}. The exact same propeller data was unavailable in the database, so we used a very similar propeller (Graupner CAM Slim 9x5) albeit from a different manufacturer.
+
+The data was given in terms of the rotations per second instead of the angular velocity and hence, the following scaling had to be performed
+
+\begin{eqnarray*}
+\lambda &=& \frac{J}{\pi} \\
+C_T &=& \left( \frac{2}{3} \right)^3 C_T ^ \prime \\
+C_P &=& \frac{1}{\pi} \left( \frac{2}{3} \right)^3 C_P ^ \prime \\
+\eta &=& \eta ^ \prime
+\end{eqnarray*}
+where $\lambda$ is the advance ratio based on the angular velocity, $J$ is the advance ratio based on the rotations per second, $C_T$ is the thrust coefficient, $C_P$ is the power coefficient and $\eta$ is the propeller efficiency. The primed quantities are the ones reported in the database.
+
+\subsubsection{Motor Analysis}
+The motor analysis was performed by using the standard electric motor model. The motor speed constant, motor resistance and the no-load motor current were obtained from experimentally measured values on the manufacturer's website \footnote{http://www.maxxprod.com/pdf/HC2808-xxxx.pdf}.
+
+The values of the model constants are reported below:
+\begin{eqnarray*}
+K_v &=& 980 \left( \frac{2 \pi}{60} \right) \; rad/s/volt \\
+R_m &=& 0.220 \; \Omega \\
+i_0 &=& 0.4 \; A
+\end{eqnarray*}
+
+\subsubsection{Propeller and Motor Matching}
+For a given free-stream velocity, the required torque for the propeller was calculated as a function of the angular velocity of the propeller. For the motor, the torque generated was calculated as a function of the angular velocity. By matching these two torques, we solved for the angular velocity and obtained the total propulsive efficiency. This process is illustrated in Figure~\ref{fig:prop-motor1}.
+\begin{figure}[h!]
+  \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/PS3/propmotor_v07p0.png}
+                \caption{$v = 7 \; m/s$}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/PS3/propmotor_v12p0.png}
+                \caption{$v = 12 \; m/s$}
+        \end{subfigure}%
+  \caption{Propeller-Motor matching shown graphically. Solid lines: propeller curves. Dashed lines: Motor curves}\label{fig:prop-motor1}
+\end{figure}
+
+For the $7 \; ms^{-1}$ case, we see that the propeller efficiency, $\eta_p$ peaks at very low angular velocities and hence the total propulsive efficiency is poor. For the $12 \; ms^{-1}$ case, the propeller efficiency, $\eta_p$ peaks at high angular velocities which again leads to a low total propulsive efficiency. Optimizing the total propulsive efficiency over different airspeeds, we get the best motor-propeller matching illustrated in Figure~\ref{fig:prop-motor2}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/PS3/propmotor_opt.png}
+  \caption{Optimal Propeller-Motor matching shown graphically. Solid lines: propeller curves. Dashed lines: Motor curves}\label{fig:prop-motor2}
+\end{figure}
+
+The total propulsive efficiency and the thrust are plotted against airspeed in Figure~\ref{fig:teff-thrust}.
+
+\begin{figure}[h!]
+  \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/PS3/Teff.png}
+                \caption{Plot of the total propulsive efficiency against airspeed}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/PS3/Thrust.png}
+                \caption{Plot of the total thrust against airspeed}
+        \end{subfigure}%
+  \caption{Thrust and efficiency plots}\label{fig:teff-thrust}
+\end{figure}
+
 \subsection{Design Approach}
+For our mission plan, it is critical that we climb to an altitude of $400 ft$ as fast as we can to efficiently scout the search area and sight all four targets as soon as we can. Hence, the rate of climb for our airplane is of crucial importance. In addition to this, the endurance of our aircraft is also very important since the allowed battery consumption is very limiting. We designed our aircraft mainly based on these two considerations.
 \label{DsignAppr}
 \subsection{Performance Characteristics}
 \label{PerfChar}
