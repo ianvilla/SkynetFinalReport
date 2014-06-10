@@ -233,7 +233,78 @@ A comparison of the performance parameters estimated from our analysis with the 
 \caption{Estimated vs. measured flight performance parameters}
 \label{table:Compar} 
 \end{table}
-\label{AeroFlightPerf}
+
+\subsection{Stability Analysis}
+
+The stability analysis of our design was performed in AVL. Three different straight and level flight trim states and one level turn trim state were analysed. The four cases used are listed in Table~\ref{table:stab-cases}.
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Case} & \textbf{Airspeed (in m/s)} & \textbf{Bank Angle (in degrees)} \\ 
+\hline
+Case 1 &  $8.5$ &  $0$ \\
+Case 2 &  $7.0$ &  $0$ \\
+Case 3 & $10.0$ &  $0$ \\
+Case 4 &  $8.5$ & $30$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Different cases for stability analysis in AVL}
+\label{table:stab-cases} 
+\end{table}
+
+The eigenvalues, frequencies and damping ratios for the different modes are plotted in Figures~\ref{fig:eig},~\ref{fig:freq} and \ref{fig:damp}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS2/SkynetV1_eig.png}
+  \caption{Eigenvalue plot}\label{fig:eig}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS2/SkynetV1_freq.png}
+  \caption{Frequency}\label{fig:freq}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Figures/PS2/SkynetV1_damp.png}
+  \caption{Damping ratio}\label{fig:damp}
+\end{figure}
+
+\subsection{Three-view drawings of the final design}
+
+Figure~\ref{fig:CAD} shows the CAD drawings of our final design. Figure~\ref{fig:SW} shows the SolidWorks model of our design that we used to get all the parts for the laser cutter.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/CAD/Aircraft_Design_3-3.png}
+  \caption{CAD drawings of the final design}\label{fig:CAD}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/CAD/iso.png}
+                \caption{Isometric view}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/CAD/top.png}
+                \caption{Top view}
+        \end{subfigure}
+        \\
+        \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/CAD/side.png}
+                \caption{Side view}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.49\textwidth}
+                \includegraphics[width=\textwidth]{Figures/CAD/front.png}
+                \caption{Front view}
+        \end{subfigure}%
+  \caption{Solidworks model screenshots}\label{fig:SW}
+\end{figure}
+
 % AKSHAY & SRAVYA
 % Include in this section a Three View Drawing of the Plane
 

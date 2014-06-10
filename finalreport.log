@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 JUN 2014 15:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 JUN 2014 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,9 +334,80 @@ Package pdftex.def Info: Figures/PS3/power_consumption.png used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./Figures/PS3/propmotor_opt.png>]
-Overfull \vbox (397.67456pt too high) has occurred while \output is active []
+<Figures/PS2/SkynetV1_eig.png, id=50, 549.4929pt x 444.2196pt>
+File: Figures/PS2/SkynetV1_eig.png Graphic file (type png)
 
+<use Figures/PS2/SkynetV1_eig.png>
+Package pdftex.def Info: Figures/PS2/SkynetV1_eig.png used on input line 262.
+(pdftex.def)             Requested size: 328.82707pt x 265.83566pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/PS2/SkynetV1_freq.png, id=51, 536.0025pt x 446.1468pt>
+File: Figures/PS2/SkynetV1_freq.png Graphic file (type png)
+
+<use Figures/PS2/SkynetV1_freq.png>
+Package pdftex.def Info: Figures/PS2/SkynetV1_freq.png used on input line 267.
+(pdftex.def)             Requested size: 328.82707pt x 273.7013pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/PS2/SkynetV1_damp.png, id=52, 565.3923pt x 454.0965pt>
+File: Figures/PS2/SkynetV1_damp.png Graphic file (type png)
+
+<use Figures/PS2/SkynetV1_damp.png>
+Package pdftex.def Info: Figures/PS2/SkynetV1_damp.png used on input line 272.
+(pdftex.def)             Requested size: 328.82707pt x 264.10368pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CAD/Aircraft_Design_3-3.png, id=53, 614.295pt x 794.97pt>
+File: Figures/CAD/Aircraft_Design_3-3.png Graphic file (type png)
+
+<use Figures/CAD/Aircraft_Design_3-3.png>
+Package pdftex.def Info: Figures/CAD/Aircraft_Design_3-3.png used on input line
+ 282.
+(pdftex.def)             Requested size: 469.75502pt x 607.9196pt.
+
+
+LaTeX Warning: Float too large for page by 11.08958pt on input line 284.
+
+[5 <./Figures/PS3/propmotor_opt.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CAD/iso.png, id=57, 1226.5825pt x 658.46pt>
+File: Figures/CAD/iso.png Graphic file (type png)
+ <use Figures/CAD/iso.png>
+Package pdftex.def Info: Figures/CAD/iso.png used on input line 289.
+(pdftex.def)             Requested size: 230.18253pt x 123.56142pt.
+
+<Figures/CAD/top.png, id=58, 1170.3725pt x 662.475pt>
+File: Figures/CAD/top.png Graphic file (type png)
+
+<use Figures/CAD/top.png>
+Package pdftex.def Info: Figures/CAD/top.png used on input line 293.
+(pdftex.def)             Requested size: 230.18253pt x 130.28899pt.
+
+<Figures/CAD/side.png, id=59, 1221.56375pt x 507.8975pt>
+File: Figures/CAD/side.png Graphic file (type png)
+
+<use Figures/CAD/side.png>
+Package pdftex.def Info: Figures/CAD/side.png used on input line 298.
+(pdftex.def)             Requested size: 230.18253pt x 95.7033pt.
+
+<Figures/CAD/front.png, id=60, 1210.5225pt x 255.95625pt>
+File: Figures/CAD/front.png Graphic file (type png)
+
+<use Figures/CAD/front.png>
+Package pdftex.def Info: Figures/CAD/front.png used on input line 302.
+(pdftex.def)             Requested size: 230.18253pt x 48.66733pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./Figures/PS3/Teff.png> <./Figures/PS3/Thrust.png> <./Figures/PS3/SkynetV3_
 XFLR_pic.png>]
@@ -347,41 +418,58 @@ LaTeX Warning: Text page 7 contains only floats.
 
 LaTeX Warning: Text page 8 contains only floats.
 
-[8 <./Figures/PS3/CL-CD_vs_V.png> <./Figures/PS3/Cm_vs_alpha.png>] [9 <./Figure
-s/PS3/power_consumption.png>] (./finalreport.aux) ) 
+[8 <./Figures/PS3/CL-CD_vs_V.png> <./Figures/PS3/Cm_vs_alpha.png>]
+Overfull \vbox (235.34232pt too high) has occurred while \output is active []
+
+
+[9 <./Figures/PS3/power_consumption.png>] [10 <./Figures/PS2/SkynetV1_eig.png>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (1.57495pt too high) has occurred while \output is active []
+
+
+[11 <./Figures/PS2/SkynetV1_freq.png> <./Figures/PS2/SkynetV1_damp.png>]
+[12 <./Figures/CAD/Aircraft_Design_3-3.png>] [13 <./Figures/CAD/iso.png> <./Fig
+ures/CAD/top.png> <./Figures/CAD/side.png> <./Figures/CAD/front.png>]
+(./finalreport.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3237 strings out of 493488
- 49356 string characters out of 3141326
- 110777 words of memory out of 3000000
- 6495 multiletter control sequences out of 15000+200000
+ 3283 strings out of 493488
+ 50481 string characters out of 3141326
+ 113826 words of memory out of 3000000
+ 6532 multiletter control sequences out of 15000+200000
  18007 words of font info for 41 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,9n,38p,1035b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/tex
-mf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2012/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2012/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
-/public/cm-super/sfcc1440.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
-ublic/cm-super/sfcc1728.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm0600.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm0800.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
-cm-super/sfrm0900.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/cm
--super/sfrm1000.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1095.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1200.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/cm-super
-/sfti1200.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/cm-super/s
-ftt1200.pfb>
-Output written on finalreport.pdf (10 pages, 978935 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2012/texmf-dist
+/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on finalreport.pdf (14 pages, 1948223 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
