@@ -6,6 +6,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{amsfonts}
+\usepackage{amsmath}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 %\def\wl{\par \vspace{\baselineskip}}
@@ -336,13 +337,65 @@ Figure~\ref{fig:CAD} shows the CAD drawings of our final design. Figure~\ref{fig
 \subsubsection{Mk-III.2 "The UltraLight"}
 \label{mk3.4}
 
+
+%%%%%%%%%%%%%%%% Start: Flight Testing %%%%%%%%%%%%%%%%%%%
 \section{Flight Testing}
 \label{FlightTesting}
+Over the course of two weeks, before and during the final competition, the flight test team worked extensively to try to successfully implement the strategies described in section \ref{Mission}. It was decided very early during flight testing that the only way to accomplish the task was to add sections of the mission incrementally. A strategy of "coding at night, flying in the morning" was implemented and each section of the mission was tested in a simulator, tested during flight and gradually changed to improve performance and accommodate realistic goals.
+
 \subsection{Flight Test Approach}
 \label{FltTstAppr}
+Flight testing was split into three major sections: Waypoint Navigation, Phase 1 testing and Phase 2 testing. The goal of waypoint navigation was to successful traverse a spiral given a set number of waypoints. Phase 1 testing included all sections of flight before a time of sight for all targets is found. Phase 2 testing included the refinement process for each target and on board calculations of estimated target locations.
+
+\subsubsection{Waypoint Navigation}
+The entire mission consists of flying one spiral around the center of the lake to find all targets and flying circles around constantly changing centroids during target refinement. This is much different from the line transitioning which was the goal of problem set 3. During flight testing, the line transitioning algorithm presented in problem set 3 proved to be unfavorable. A small change was made to the algorithm to be able to smoothly traverse waypoints in a circular pattern.\\
+
+As a reminder, in problem set 3, waypoint vectors point between waypoints while the plane vector always points from the plane to the current waypoint. These are used to compute a heading error which is then coupled with a proportional gain to compute a heading command. If the waypoint is found within a certain specified error radius, the plane will head towards the next waypoint. For sprials, the following new equations are used to compute waypoint heading vector angles,
+\begin{align*}
+\mbox{For a circular path: } H_{wp} &= atan2((y_{wp}-y_{centroid}),(x_{wp}-x_{centroid})) + \pi /2 \\
+\mbox{For transition between spirals: } H_{wp} &= atan2((y_{wp,i+1}-y_{wp,i}),(x_{wp,i+1}-x_{wp,i}))
+\end{align*}
+where $(x_{wp},y_{wp})$ are waypoint locations. The first equation forces the plane to track a line tangent to a circle centered around a specified centroid $(x_{centroid},y_{centroid})$. For the spiral, the centroid is set to $(0,0)$. For phase 2 refinement, the centroid is changes according to target locations. The second equation is forces the plane to track a line between waypoints. This is essential for moving between inner circles of the spiral. During flight testing, these proved to be the most robust.\\
+
+To improve reliability, a check was made to ensure the plane would always move towards a waypoint. If the plane was outside a 45 degree field of view of the waypoint or if the plane was within 10 meters of a waypoint, the plane was commanded to move directly towards the waypoint. The figure below shows an example of the algorithm during a test flight,
+
+\subsubsection{Phase 1 testing}
+At the start of a mission, the plane is commanded to increase in altitude at a maximum climb rate to a specified altitude. Once the altitude is reached, the plane flies through a series of transition points which help it navigate into a spiral more smoothly. Once the spiral is initiated, snapshots are taken at each waypoint to ensure maximum coverage of the entire area. Phase 1 transitions into phase 2 once all targets are acquired. If all targets are not found within the spiral, the plane reinitializes a new spiral.\\
+
+First, the mission spiral was tested without taking snapshots to ensure the waypoint navigation was working correctly. We ran into two major problems with the APM board and the Starduplane code during this phase of testing.
+\begin{enumerate}
+\item \textbf{Flash Memory Problem:} In problem set 3, we ran into memory issues when the majority of our code was written in classes and dynamically allocatable containers. This time, the memory issue arose because of the amount of floats being stored. When a dynamically allocatable array allocates more memory during runtime when there is no more memory to allocate, the APM board seems to overwrite other memory addresses. To avoid this issue and weird behaviors during flight time (Nose Dives!), static arrays were created so that an error message would be received during compile time. Unfortuanely, storing the 52 waypoints required for the spiral (104 floats) was too much for the APM board.
+\item \textbf{Initialization Problem:} A major problem arises when trying to limit a command to only happen once during initialization of auto mode. Using only the "just switched to AUTO" logic found in Starduplane does not ensure that a command only happens once during auto mode. This may be caused by the fact that sometimes it may take longer than 100 ms to return to the fast loop.
+\end{enumerate}
+
+Both of these issues took an extensive amount of time to fix. After going through several iterations, the following solutions were concluded.
+\begin{enumerate}
+\item \textbf{Solution to Flash Memory Problem:} To limit the amount of static floats stored in flash during phase 1, a function was created to produce waypoints on the fly during the spiral. An optimal spiral function is created depending on the location where the initial climb to max altitude ends. The spiral changes on each run but this ensures that the plane starts the spiral as close as possible and that flash memory isn't filled with waypoint data.
+\item \textbf{Solution to Initialization issues:} To ensure that a spiral is only created once during auto mode, a parameter is created to act as a flag. Before a mission is flown, the parameter is set to zero in Mission Planner. Once the program initializes the spiral, the flag is set to 1 and the program can no longer initialize a spiral.
+\end{enumerate}
+
+Once these bugs were fixed, the team was able to implement snapshot capturing. Snapshots must be taken at each waypoint during the spiral to ensure maximum coverage of the entire area. If a snapshot is not captured at a waypoint, the plane circles around the waypoint until a snapshot is taken. To limit the amount of waypoint misses, the waypoints were spread further apart. An snapshot error was set to 5 meters so that snapshots/waypoints were guaranteed to be hit within a 5 meter radius. The airspeed was also reduced to 11 m/s.\\
+
+One of the last features implemented in phase 1 was a controlled climb with snapshots...
+
+%%%%%%%%%% Brandon please add Phase 1 - Climb flight testing here %%%%%%%%%%%
+
+By taking snapshots while climbing at the center, we were able to sometimes get lucky and capture a target before going into a spiral.
+
+\subsubsection{Phase 2 testing}
+%%%%% Akshay please add everything you can about the flight testing of Phase 2 here %%%%%
+% Step 1: adding phase 2 simple
+% Step 2: removing phase 2 simple and adding all of the refinement
+% what sections were tested first, second, third, etc...
+% Problems we had: Flash memory issue with storing snapshots, the dreaded unsigned int...
+%%%%% Akshay please add everything you can about the flight testing of Phase 2 here %%%%%
+
 \subsection{Simulation vs. Actual Tests}
 \label{simvsact}
-% JERRY
+%%% Kartikey please summarize the differences between your envisioned mission plan and what the plane actually does %%%
+
+%%%%%%%%%%%%%%%% End: Flight Testing %%%%%%%%%%%%%%%%%%%
+
 
 \section{Mission Flight Results}
 \label{MissionFlightResults}
