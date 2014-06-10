@@ -1,16 +1,19 @@
+\section{Mission}
+\label{Mission}
+
 \subsection{Approach via identification of score components}
 Skynet's mission strategy, and subsequent airplane design, is motivated by the identification of bounds on the three components of score:
 
 \begin{enumerate}
-\item Accuracy component: Positive real, bounded above by $\alpha/4 = 50$ (perfect refinement) and below by $0$ (estimates at infinity). 
+\item \textbf{Accuracy component}: Positive real, bounded above by $\alpha/4 = 50$ (perfect refinement) and below by $0$ (estimates at infinity). 
 
 This suggests that we should have a high endurance aircraft and a specialized refinement algorithm.
 
-\item Time component: Positive real, unbounded above (save for physical constraints) and bounded below by $0$ (failure to locate one or more targets).
+\item \textbf{Time component}: Positive real, unbounded above (save for physical constraints) and bounded below by $0$ (failure to locate one or more targets).
 
 This suggests that we should have a trajectory that can locate all the targets with probability 1, and fly as fast as such a trajectory (and battery requirements) would admit.
 
-\item Reliability component: Positive real, unbounded above  and bounded below by $1$ (less than 6 flights). Note, however, that $\delta_{rel} \sim 1 + 0.05 n_{flights}/5$ as per the final scheme adopted for the competition, which implies that the overall average gets multiplied by only $1.5$ after $50$ flights. 
+\item \textbf{Reliability component}: Positive real, unbounded above (save for official flying period limits) and bounded below by $1$ (less than 6 flights). Note, however, that $\delta_{rel} \sim 1 + 0.01 n_{flights}$ as per the final scheme adopted for the competition, which implies that the overall average gets multiplied by only $1.5$ after $50$ flights. 
 
 This suggests that we should have control loops that can ensure identical inner loop performance on every run.
 
@@ -33,21 +36,21 @@ The initial approach to find a solution for this problem had been guided by para
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase1_a}
-\label{fig_mission_phase1_a}
+\includegraphics[scale=0.75]{Figures/mission_phase1_a}
 \caption{Annular region contained within discrete circles}
+\label{fig_mission_phase1_a}
 \end{figure}
 
 This suggests that the desired trajectory can be realized by a set of concentric circles whose radii $R_i$ are chosen to ensure that corresponding consecutive annular regions have non-zero overlap (see figure \ref{fig_mission_phase1_b}).
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase1_b}
-\label{fig_mission_phase1_b}
+\includegraphics[scale=0.75]{Figures/mission_phase1_b}
 \caption{Overlap between subsequent annular regions}
+\label{fig_mission_phase1_b}
 \end{figure}
 
-The analytical values of $R-i$ can now be obtained recursively as follows:
+The analytical values of $R_i$ can now be obtained recursively as follows:
 \begin{enumerate}
 \item Recurrence relation: $ R_k + \delta R_k^+ = R_{k-1} - \delta R_{k-1}^-$
 \item Base case: $ R_1 + \delta R_1^+ = R_0 = 165$
@@ -59,15 +62,15 @@ Clearly, the trajectory is completely specified once the functional relationship
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase1_c}
-\label{fig_mission_phase1_c}
+\includegraphics[scale=0.75]{Figures/mission_phase1_c}
 \caption{Typical trajectory used for phase-1}
+\label{fig_mission_phase1_c}
 \end{figure}
 
 
 \subsection{Phase-2: An active path to refine the estimates of sighted targets}
 
-At the end of phase-1, each of the four targets $\xi^j$ is known to lie within a simply connected and provably convex region $\omega^j$ with probability 1. Define a suitable norm on the region $\| omega^j\|$. For our purpose, the geometric area or the maximum distance between any two points on the periphery of the region are appropriate measures. We are interested in finding a trajectory $x^j_n$ for $n=1,2,3, \cdot , n_f$ such that the target region shrinks to a specified tolerance, i.e. the sequence $\omega_n^j$ converges so that $\| \omega^j_{n_f} \| < \| \omega_\gamma \|$  for a given tolerance $\| \omega_\gamma \|$. For an active trajectory,  depends on  Given this requirement, we can identify certain key characteristics of the trajectory:
+At the end of phase-1, each of the four targets $\xi^j$ is known to lie within a simply connected and provably convex region $\omega^j$ with probability 1. Define a suitable norm on the region $\| \omega^j\|$. For our purpose, the geometric area or the maximum distance between any two points on the periphery of the region are appropriate measures. We are interested in finding a trajectory $x^j_n$ for $n=1,2,3, \cdot , n_f$ such that the target region shrinks to a specified tolerance, i.e. the sequence $\omega_n^j$ converges so that $\| \omega^j_{n_f} \| < \| \omega_\gamma \|$  for a given tolerance $\| \omega_\gamma \|$. For an active trajectory, $x^j_n$ depends on $x^j_1, x^j_2, \cdot, x^j_{n-1}$.  Given this requirement, we can identify certain key characteristics of the trajectory:
 
 \begin{itemize}
 \item The trajectory must lead to convergence for any admissible $\xi^j$ and $\omega^j$
@@ -75,13 +78,13 @@ At the end of phase-1, each of the four targets $\xi^j$ is known to lie within a
 \item The determination of the trajectory must not be computationally intensive
 \end{itemize}
 
-For this phase of the mission, we augment the estimation procedure by keeping track of unsuccessful snapshots (those that did not contain the target) as well. The target region is then obtained by first evaluating the intersection of all successful snapshots and then exsecting the union of unsuccessful snapshots. The subsequent procedure is the same as before. Note that the estimation strategy guarantees that $\omega_n^j$ is a non-increasing sequence.
+For this phase of the mission, we augment the estimation procedure (see section \ref{sec:TPEA}) by keeping track of unsuccessful snapshots (those that did not contain the target) as well. The target region is then obtained by first evaluating the intersection of all successful snapshots and then exsecting the union of unsuccessful snapshots. The subsequent procedure is the same as before. Note that the estimation strategy guarantees that $\| \omega_n^j \|$ is a non-increasing sequence.
 
 One possible active trajectory that satisfies the essential requirement of convergence can be obtained through heuristic arguments. Let $v$ be the cruise airspeed dictated by design for maximum endurance, $R_f$ be the radius of the field of view at the highest admissible altitude, $t_s$ be the snapshot gap time, and radius $R$ be an intrinsic parameter. Then:
 
 \begin{enumerate}
 \item Evaluate $y_n$ the centroid of $\omega_n$
-\item Let $x_{n_1} = y_{n_1} + R \cos (v/R)t_s, x_{n_2} = y_{n_2} + R \sin (v/R)t_s$ i.e. follow a circular path of radius $R$ centered at the centroid of the target region
+\item Let $x_{n_1} = y_{n_1} + R \cos (v\;t_s/R), x_{n_2} = y_{n_2} + R \sin (v\;t_s/R)$ i.e. follow a circular path of radius $R$ centered at the centroid of the target region
 \item Evaluate the field of view and check for presence of target. 
   \begin{enumerate}
   \item[a] If a target is found, evaluate $\omega_{n+1}$ using all the snapshots. Then repeat steps 1-3
@@ -91,7 +94,7 @@ One possible active trajectory that satisfies the essential requirement of conve
 
 The exit criterion used for determining convergence has been taken to be $\| \omega_{n_f} \| < 1$ which approximately corresponds to the norm of the region being smaller than $\gamma = 1m$. The parameter $R$ is taken to be equal to $R_f \sim 30m$, and $v$ is taken to be $5 m/s$.
 
-In words, this active path is composed of \lq shifting circles \rq where the changing circles correspond to levels of the algorithm. Several very interesting geometrical convergence statements can be proven. However, instead of delving deep into theoretical results, we briefly comment on the salient features of the process that are directly related to the key characteristics outlined above. 
+In words, this active path is composed of \lq shifting circles\rq where the changing circles correspond to levels of the algorithm. Several very interesting geometrical convergence statements can be proven. However, instead of delving deep into theoretical results, we briefly comment on the salient features of the process that are directly related to the key characteristics outlined above. 
 
 \begin{itemize}
 \item The algorithm is guaranteed to converge for any admissible target location and target region provided that $v<(2\pi R)/3$. In fact, the convergence is proportional to $\sqrt{n_l}$ where $n_l$ is the level of the algorithm. This follows from the fact that during each level of the algorithm the area of the region decreases on average by at least a factor of $1/3$ due to the following geometric result: A circle of radius $R$ can be equi- partitioned by $3$ circles of radii $R$ centered at the vertices of an equilateral triangle inscribed within the original circle.
@@ -104,35 +107,32 @@ In words, this active path is composed of \lq shifting circles \rq where the cha
 
 \end{itemize}
 
-An instance of the refinement procedure for a randomly generated target starting from a single snapshot (worst case scenario at the end of phase-1) is shown in figure \ref{fig_mission_phase2_a}. The \lq x\rq mark is the true target, the \lq + \rq marks are estimates returned by the camera, the diamonds are processed target locations, and \lq * \rq denote the target region. 
+An instance of the refinement procedure for a randomly generated target starting from a single snapshot (worst case scenario at the end of phase-1) is shown in figure \ref{fig_mission_phase2_a}. The \lq x\rq mark is the true target, the \lq + \rq marks are estimates returned by the camera, the diamonds are processed target locations, and \lq * \rq denote the target region. A portrait of the successful and unsuccessful snapshots is shown in figure \ref{fig_mission_phase2_b}. Figure \ref{fig_mission_phase2_c} plots the convergence history of the algorithm through a geometrical as well as an exact measure.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase2_a}
-\label{fig_mission_phase2_a}
+\includegraphics[scale=0.75]{Figures/mission_phase2_a}
 \caption{An instance of the refinement procedure}
+\label{fig_mission_phase2_a}
 \end{figure}
-
-A portrait of the successful and unsuccessful snapshots is shown in figure \ref{fig_mission_phase2_b}. 
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase2_b}
-\label{fig_mission_phase2_b}
+\includegraphics[scale=0.75]{Figures/mission_phase2_b}
 \caption{A portrait of the successful and unsuccessful snapshots}
+\label{fig_mission_phase2_b}
 \end{figure}
-
-Figure \ref{fig_mission_phase2_c} plots the convergence history of the algorithm through a geometrical as well as an exact measure.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_phase2_c}
-\label{fig_mission_phase2_c}
+\includegraphics[scale=0.75]{Figures/mission_phase2_c}
 \caption{Convergence history of the algorithm}
+\label{fig_mission_phase2_c}
 \end{figure}
 
 
 \subsection{Target position estimation scheme}
+\label{sec:TPEA}
 
 Skynet's target position estimation algorithm is based upon the following two observations:
 
@@ -141,14 +141,14 @@ Skynet's target position estimation algorithm is based upon the following two ob
 
 \item The estimates $y_{est_{j_k}}$ returned from the camera for the $j^{th}$ target are drawn from a bivariate normal distribution with mean $(y_{true_{j_1}}, y_{true_{j_2}})$ and finite expectation. The maximum likelihood estimator for this case is exactly the sample mean 
 
-\[ (\hat{y}_{j_1}, \hat{y}_{j_2}) = \frac{1}{K_j} \left( \sum_limits_1^{K_j} y_{est_{j_{k_1}}}, \sum_limits_1^{K_j} y_{est_{j_{k_2}}} \right)\]
+\[ (\hat{y}_{j_1}, \hat{y}_{j_2}) = \frac{1}{K_j} \left( \sum\limits_1^{K_j} y_{est_{j_{k_1}}}, \sum\limits_1^{K_j} y_{est_{j_{k_2}}} \right)\]
 
 \end{enumerate}
 
 The following asymptotic results provide theoretical reliability to the two measures mentioned above
 
 \begin{enumerate}
-\item Let $F_i=\{y : \| (y_1,y_2) -(y_{i_1},y_{i_2})\| \leq r, \| (\xi_1,\xi_2) -(y_{i_1},y_{i_2})\| \leq r \}$ denote circular areas with radius $r$ centered at $y_i$ that all necessarily contain the point $\xi$. Further let $y_i$ be drawn from a uniform random distribution in $\mathbb{R}^2$. Then, $P(\| y_n - \xi \| > \delta) \rightarrow 0 \forall y_n \in \cap_i^n F_i, \delta>0 $ as $n \rightarrow \infty$  as . 
+\item Let $F_i=\{y : \| (y_1,y_2) -(y_{i_1},y_{i_2})\| \leq r, \| (\xi_1,\xi_2) -(y_{i_1},y_{i_2})\| \leq r \}$ denote circular areas with radius $r$ centered at $y_i$ that all necessarily contain the point $\xi$. Further let $y_i$ be drawn from a uniform random distribution in $\mathbb{R}^2$. Then, $P(\| y_n - \xi \| > \delta) \rightarrow 0 \; \; \forall \; \; y_n \in \cap_i^n F_i, \; \delta>0 $ as $n \rightarrow \infty$. 
 
 In other words, the intersection of the random circles converges to the common point. Hence, if we take enough snapshots, the fields of view alone would be enough to provide us with the true location of the targets.
 
@@ -175,11 +175,11 @@ result in a $p$-sided convex polygon (see figure \ref{fig_mission_tpea_a}).
 \begin{figure}
 \centering
 \includegraphics[scale=1]{Figures/mission_tpea_a}
-\label{fig_mission_tpea_a}
 \caption{Region that contains the target with probability 1}
+\label{fig_mission_tpea_a}
 \end{figure}
 
-\item  Find the sample mean of the estimates return by the camera $\hat{y}$
+\item  Find the sample mean of the estimates returned by the camera $\hat{y}$
 
 \item  Check if $\hat{y} \in I$. If yes, report $\hat{y}$ as the final estimate (see figure \ref{fig_mission_tpea_b}).
 
@@ -189,9 +189,9 @@ inside a convex polygon.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_tpea_b}
-\label{fig_mission_tpea_b}
+\includegraphics[scale=0.75]{Figures/mission_tpea_b}
 \caption{MLE within geometric requirements}
+\label{fig_mission_tpea_b}
 \end{figure}
 
 
@@ -199,27 +199,40 @@ inside a convex polygon.
 
 Scheme:
 Find the point of intersection of the line joining centroid 
-of the polygon and with the perimeter of the polygon. (see figure \ref{fig_mission_tpea_c})
+of the polygon and $\hat{y}$  with the perimeter of the polygon. (see figure \ref{fig_mission_tpea_c})
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Figures/mission_tpea_c}
-\label{fig_mission_tpea_c}
+\includegraphics[scale=0.75]{Figures/mission_tpea_c}
 \caption{Geometric correction to MLE}
+\label{fig_mission_tpea_c}
 \end{figure}
 
 
 \end{enumerate}
 
-The following figure shows the advantage of this estimation method during actual simulations. The \lq x\rq marks are the true targets, the \lq +\rq marks are estimates returned by the camera, and the squares are processed target locations.
+Figure \ref{fig_mission_tpea_d} shows the advantage of this estimation method during actual simulations. The \lq x\rq marks are the true targets, the \lq +\rq marks are estimates returned by the camera, and the squares are processed target locations.
 
-
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{Figures/mission_tpea_d}
+\caption{Performance of estimation algorithm}
+\label{fig_mission_tpea_d}
+\end{figure}
 
 \subsection{Statistical measure of score and mission time}
 
 As per the analysis of the aircraft performance group, the finalized aircraft design was expected to have maximum endurance near stall speed. For this purpose, the airspeed for Phase-2 was simulated at $5m/s$. (Actual flight tests later revealed that the airplane stalled around $7m/s$ and, incidentally, could operate stably only above $9m/s$). 
 
-Similarly, the optimal rate of climb at the beginning of Phase-1 was simulated as per design values. The only free parameter remaining was the cruise speed during phase-1. Towards this aim, a parametric study against cruise airspeed was conducted by gathering statistics over 100 realizations of the target locations.
+Similarly, the optimal rate of climb at the beginning of Phase-1 was simulated as per design values. The only free parameter remaining was the cruise speed during phase-1. Towards this aim, a parametric study with cruise airspeed was conducted by gathering statistics over 100 realizations of the target locations.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{Figures/mission_stats_a}
+\caption{Mean and standard deviation for score components}
+\label{fig_mission_stats_a}
+\end{figure}
+
 Figure \ref{fig_mission_stats_a} plots the variation of the sample mean of the two components of score ($\beta/t_{sight}$ and $\alpha/ \sum_{i=1}^4 \max(\gamma, \|y_{target} - y_{true} \|)$) and the total score along with their standard deviations as error bars. We note that
 
 \begin{itemize}
@@ -229,11 +242,18 @@ Figure \ref{fig_mission_stats_a} plots the variation of the sample mean of the t
 \item From a-c, we conclude that $v = 11m/s$ is the ideal cruise speed for phase-1
 \end{itemize}
 
-It is important to mention that these observations should have been ideally been dictated by actual flight tests rather than empirical estimates. However, the final implementation, integration and debugging of the airplane system did not leave much time for testing and fine tuning.
+It is important to mention that these observations should have been ideally dictated by actual flight tests rather than empirical estimates. However, the final implementation, integration and debugging of the airplane system did not leave much time for testing and fine tuning.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{Figures/mission_stats_b}
+\caption{Mean and standard deviation for time components}
+\label{fig_mission_stats_b}
+\end{figure}
 
 Figure \ref{fig_mission_stats_b} plots various components of mission time for such cases where all targets could be located before the battery was consumed. As expected, $t_{sight}$ does decrease with $v$ under this restriction. The refinement times start to go down for $v \geq 12 m/s$ as the targets are not fully refined before the battery is consumed, and are therefore not plotted on the graph below.
 
-Finally, the detailed statistics for the chosen parameter values are tabulated below. This is the theoretical expectation of the mission values.
+Finally, the statistics for the chosen parameter values are tabulated below. This is the theoretical expectation of the mission values.
 
 \begin{center}
     \begin{tabular}{c | c | c | c  }

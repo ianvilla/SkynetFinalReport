@@ -1,24 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 JUN 2014 17:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.10)  9 JUN 2014 17:36
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **finalreport.tex
 (./finalreport.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size11.clo
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,69 +23,64 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/english.ldf
+(/usr/share/texmf-texlive/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/preprint/fullpage.sty
+(/usr/share/texmf-texlive/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
 \captionmargin=\dimen106
 \captionmargin@=\dimen107
 \captionwidth=\dimen108
@@ -105,20 +90,20 @@ Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 )
 \c@ContinuedFloat=\count89
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+(/usr/share/texmf-texlive/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
 \c@subfigure=\count90
 \c@subtable=\count91
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-)
-(./finalreport.aux (./mission.aux))
+) (./finalreport.aux
+(./mission.aux))
 \openout1 = `finalreport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -133,8 +118,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
-(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count92
 \scratchdimen=\dimen112
@@ -145,87 +129,36 @@ LaTeX Font Info:    ... okay on input line 13.
 \MPscratchCnt=\count95
 \MPscratchDim=\dimen113
 \MPnumerator=\count96
-\makeMPintoPDFobject=\count97
 \everyMPtoPDFconversion=\toks17
-) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-<./skynet.png, id=1, 1838.87pt x 260.975pt>
+ <./skynet.png, id=1, 1838.87pt x 260.975pt>
 File: ./skynet.png Graphic file (type png)
  <use ./skynet.png>
-Package pdftex.def Info: ./skynet.png used on input line 22.
-(pdftex.def)             Requested size: 469.75502pt x 66.6652pt.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./skyne
-t.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./skynet.png (PNG copy)>] 
 (./finalreport.toc)
 \tf@toc=\write3
 \openout3 = `finalreport.toc'.
 
- [1
+
+[1
 
 ] [2] [3
 
@@ -233,413 +166,257 @@ t.png>]
 \openout2 = `mission.aux'.
 
  (./mission.tex
-
-Package caption Warning: \label without proper \caption on input line 37.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase1_a' on page 4 undefined on input li
-ne 29.
+Overfull \hbox (5.35175pt too wide) in paragraph at lines 12--13
+[]\T1/cmr/bx/n/10.95 Time com-po-nent\T1/cmr/m/n/10.95 : Pos-i-tive real, un-bo
+unded above (save for phys-i-cal con-straints) and bounded
+ []
 
 [4
 
-] <Figures/mission_phase1_a.png, id=37, 287.57437pt x 193.47281pt>
+] <Figures/mission_phase1_a.png, id=36, 287.57437pt x 193.47281pt>
 File: Figures/mission_phase1_a.png Graphic file (type png)
 
 <use Figures/mission_phase1_a.png>
-Package pdftex.def Info: Figures/mission_phase1_a.png used on input line 36.
-(pdftex.def)             Requested size: 287.57367pt x 193.47234pt.
-
-
-Package caption Warning: \label without proper \caption on input line 46.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase1_b' on page 5 undefined on input li
-ne 41.
-
-<Figures/mission_phase1_b.png, id=38, 263.48438pt x 185.19188pt>
+<Figures/mission_phase1_b.png, id=37, 263.48438pt x 185.19188pt>
 File: Figures/mission_phase1_b.png Graphic file (type png)
 
-<use Figures/mission_phase1_b.png>
-Package pdftex.def Info: Figures/mission_phase1_b.png used on input line 45.
-(pdftex.def)             Requested size: 263.48372pt x 185.1914pt.
-
-
-Package caption Warning: \label without proper \caption on input line 63.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase1_c' on page 5 undefined on input li
-ne 58.
-
-<Figures/mission_phase1_c.png, id=39, 310.91156pt x 298.86656pt>
+<use Figures/mission_phase1_b.png> [5 <./Figures/mission_phase1_a.png (PNG copy
+)> <./Figures/mission_phase1_b.png (PNG copy)>]
+<Figures/mission_phase1_c.png, id=42, 310.91156pt x 298.86656pt>
 File: Figures/mission_phase1_c.png Graphic file (type png)
 
 <use Figures/mission_phase1_c.png>
-Package pdftex.def Info: Figures/mission_phase1_c.png used on input line 62.
-(pdftex.def)             Requested size: 310.91078pt x 298.86581pt.
- [5 <./Figures/mission_phase1_a.png>]
-[6 <./Figures/mission_phase1_b.png> <./Figures/mission_phase1_c.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
- [7]
-
-Package caption Warning: \label without proper \caption on input line 112.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase2_a' on page 8 undefined on input li
-ne 107.
-
-<Figures/mission_phase2_a.png, id=51, 395.97937pt x 346.29375pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+ [6 <./Figures/mission_phase1_c.png (PNG copy)>]
+<Figures/mission_phase2_a.png, id=47, 395.97937pt x 346.29375pt>
 File: Figures/mission_phase2_a.png Graphic file (type png)
 
 <use Figures/mission_phase2_a.png>
-Package pdftex.def Info: Figures/mission_phase2_a.png used on input line 111.
-(pdftex.def)             Requested size: 395.97841pt x 346.2929pt.
-
-
-Package caption Warning: \label without proper \caption on input line 121.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase2_b' on page 8 undefined on input li
-ne 116.
-
-<Figures/mission_phase2_b.png, id=52, 328.97906pt x 277.78781pt>
+<Figures/mission_phase2_b.png, id=48, 328.97906pt x 277.78781pt>
 File: Figures/mission_phase2_b.png Graphic file (type png)
 
 <use Figures/mission_phase2_b.png>
-Package pdftex.def Info: Figures/mission_phase2_b.png used on input line 120.
-(pdftex.def)             Requested size: 328.97826pt x 277.78711pt.
-
-
-Package caption Warning: \label without proper \caption on input line 130.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_phase2_c' on page 8 undefined on input li
-ne 125.
-
-<Figures/mission_phase2_c.png, id=53, 380.92313pt x 310.91156pt>
+<Figures/mission_phase2_c.png, id=49, 380.92313pt x 310.91156pt>
 File: Figures/mission_phase2_c.png Graphic file (type png)
 
-<use Figures/mission_phase2_c.png>
-Package pdftex.def Info: Figures/mission_phase2_c.png used on input line 129.
-(pdftex.def)             Requested size: 380.92218pt x 310.91078pt.
- [8 <./Figures/mission_phase2_a.png>]
-[9 <./Figures/mission_phase2_b.png>] [10 <./Figures/mission_phase2_c.png>]
-
-Package caption Warning: \label without proper \caption on input line 178.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_tpea_a' on page 11 undefined on input lin
-e 173.
-
-<Figures/mission_tpea_a.png, id=63, 182.93344pt x 177.66376pt>
+<use Figures/mission_phase2_c.png> [7] [8 <./Figures/mission_phase2_a.png (PNG 
+copy)> <./Figures/mission_phase2_b.png (PNG copy)>] [9 <./Figures/mission_phase
+2_c.png (PNG copy)>]
+<Figures/mission_tpea_a.png, id=59, 182.93344pt x 177.66376pt>
 File: Figures/mission_tpea_a.png Graphic file (type png)
 
 <use Figures/mission_tpea_a.png>
-Package pdftex.def Info: Figures/mission_tpea_a.png used on input line 177.
-(pdftex.def)             Requested size: 182.93298pt x 177.66331pt.
-
-
-Package caption Warning: \label without proper \caption on input line 193.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_tpea_b' on page 11 undefined on input lin
-e 184.
-
-<Figures/mission_tpea_b.png, id=64, 134.75343pt x 209.28188pt>
+<Figures/mission_tpea_b.png, id=60, 134.75343pt x 209.28188pt>
 File: Figures/mission_tpea_b.png Graphic file (type png)
 
 <use Figures/mission_tpea_b.png>
-Package pdftex.def Info: Figures/mission_tpea_b.png used on input line 192.
-(pdftex.def)             Requested size: 134.7531pt x 209.28134pt.
-
-
-Package caption Warning: \label without proper \caption on input line 207.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig_mission_tpea_c' on page 11 undefined on input lin
-e 202.
-
-[11 <./Figures/mission_tpea_a.png>]
-<Figures/mission_tpea_c.png, id=68, 217.5628pt x 229.60782pt>
+<Figures/mission_tpea_c.png, id=61, 217.5628pt x 229.60782pt>
 File: Figures/mission_tpea_c.png Graphic file (type png)
 
 <use Figures/mission_tpea_c.png>
-Package pdftex.def Info: Figures/mission_tpea_c.png used on input line 206.
-(pdftex.def)             Requested size: 217.56227pt x 229.60725pt.
+<Figures/mission_tpea_d.png, id=62, 350.05782pt x 176.15813pt>
+File: Figures/mission_tpea_d.png Graphic file (type png)
 
+<use Figures/mission_tpea_d.png> [10 <./Figures/mission_tpea_a.png (PNG copy)>]
+[11 <./Figures/mission_tpea_b.png (PNG copy)> <./Figures/mission_tpea_c.png (PN
+G copy)>] <Figures/mission_stats_a.png, id=69, 441.14813pt x 366.61969pt>
+File: Figures/mission_stats_a.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig_mission_stats_a' on page 12 undefined on input li
-ne 223.
+<use Figures/mission_stats_a.png>
+<Figures/mission_stats_b.png, id=70, 445.665pt x 362.85562pt>
+File: Figures/mission_stats_b.png Graphic file (type png)
 
-[12 <./Figures/mission_tpea_b.png>]
-
-LaTeX Warning: Reference `fig_mission_stats_b' on page 13 undefined on input li
-ne 234.
-
-) [13 <./Figures/mission_tpea_c.png>]
-<Figures/PS3/propmotor_v07p0.png, id=76, 1029.8475pt x 797.98125pt>
+<use Figures/mission_stats_b.png> [12 <./Figures/mission_tpea_d.png (PNG copy)>
+] [13 <./Figures/mission_stats_a.png (PNG copy)> <./Figures/mission_stats_b.png
+ (PNG copy)>]) [14]
+<Figures/PS3/propmotor_v07p0.png, id=81, 1029.8475pt x 797.98125pt>
 File: Figures/PS3/propmotor_v07p0.png Graphic file (type png)
 
 <use Figures/PS3/propmotor_v07p0.png>
-Package pdftex.def Info: Figures/PS3/propmotor_v07p0.png used on input line 142
-.
-(pdftex.def)             Requested size: 230.18253pt x 178.35693pt.
-
-<Figures/PS3/propmotor_v12p0.png, id=77, 1041.8925pt x 785.93625pt>
+<Figures/PS3/propmotor_v12p0.png, id=82, 1041.8925pt x 785.93625pt>
 File: Figures/PS3/propmotor_v12p0.png Graphic file (type png)
 
-<use Figures/PS3/propmotor_v12p0.png>
-Package pdftex.def Info: Figures/PS3/propmotor_v12p0.png used on input line 146
-.
-(pdftex.def)             Requested size: 230.18253pt x 173.62605pt.
- [14
+<use Figures/PS3/propmotor_v12p0.png> [15
 
 ]
-<Figures/PS3/propmotor_opt.png, id=84, 1011.78pt x 783.92876pt>
+<Figures/PS3/propmotor_opt.png, id=89, 1011.78pt x 783.92876pt>
 File: Figures/PS3/propmotor_opt.png Graphic file (type png)
 
 <use Figures/PS3/propmotor_opt.png>
-Package pdftex.def Info: Figures/PS3/propmotor_opt.png used on input line 156.
-(pdftex.def)             Requested size: 469.75502pt x 363.97287pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/Teff.png, id=85, 965.6075pt x 784.9325pt>
+<Figures/PS3/Teff.png, id=90, 965.6075pt x 784.9325pt>
 File: Figures/PS3/Teff.png Graphic file (type png)
 
 <use Figures/PS3/Teff.png>
-Package pdftex.def Info: Figures/PS3/Teff.png used on input line 165.
-(pdftex.def)             Requested size: 230.18253pt x 187.1061pt.
-
-<Figures/PS3/Thrust.png, id=86, 979.66pt x 769.87625pt>
+<Figures/PS3/Thrust.png, id=91, 979.66pt x 769.87625pt>
 File: Figures/PS3/Thrust.png Graphic file (type png)
 
 <use Figures/PS3/Thrust.png>
-Package pdftex.def Info: Figures/PS3/Thrust.png used on input line 169.
-(pdftex.def)             Requested size: 230.18253pt x 180.8857pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <./Figures/PS3/propmotor_v07p0.png> <./Figures/PS3/propmotor_v12p0.png>]
-<Figures/PS3/SkynetV3_XFLR_pic.png, id=91, 735.74875pt x 610.28pt>
+[16 <./Figures/PS3/propmotor_v07p0.png (PNG copy)> <./Figures/PS3/propmotor_v12
+p0.png (PNG copy)>]
+<Figures/PS3/SkynetV3_XFLR_pic.png, id=96, 735.74875pt x 610.28pt>
 File: Figures/PS3/SkynetV3_XFLR_pic.png Graphic file (type png)
 
 <use Figures/PS3/SkynetV3_XFLR_pic.png>
-Package pdftex.def Info: Figures/PS3/SkynetV3_XFLR_pic.png used on input line 1
-88.
-(pdftex.def)             Requested size: 328.82707pt x 272.76103pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL_vs_alpha.png, id=93, 546.3612pt x 445.1832pt>
+<Figures/PS3/CL_vs_alpha.png, id=98, 546.3612pt x 445.1832pt>
 File: Figures/PS3/CL_vs_alpha.png Graphic file (type png)
 
-<use Figures/PS3/CL_vs_alpha.png>
-Package pdftex.def Info: Figures/PS3/CL_vs_alpha.png used on input line 199.
-(pdftex.def)             Requested size: 328.82707pt x 267.94072pt.
- [16 <./Figures/PS3/propmotor_opt.png>]
+<use Figures/PS3/CL_vs_alpha.png> [17 <./Figures/PS3/propmotor_opt.png (PNG cop
+y)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL_vs_CD.png, id=97, 546.843pt x 444.7014pt>
+<Figures/PS3/CL_vs_CD.png, id=102, 546.843pt x 444.7014pt>
 File: Figures/PS3/CL_vs_CD.png Graphic file (type png)
 
 <use Figures/PS3/CL_vs_CD.png>
-Package pdftex.def Info: Figures/PS3/CL_vs_CD.png used on input line 204.
-(pdftex.def)             Requested size: 328.82707pt x 267.42003pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL-CD_vs_V.png, id=98, 539.616pt x 444.7014pt>
+<Figures/PS3/CL-CD_vs_V.png, id=103, 539.616pt x 444.7014pt>
 File: Figures/PS3/CL-CD_vs_V.png Graphic file (type png)
 
 <use Figures/PS3/CL-CD_vs_V.png>
-Package pdftex.def Info: Figures/PS3/CL-CD_vs_V.png used on input line 209.
-(pdftex.def)             Requested size: 328.82707pt x 270.99603pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/Cm_vs_alpha.png, id=99, 556.9608pt x 440.3652pt>
+<Figures/PS3/Cm_vs_alpha.png, id=104, 556.9608pt x 440.3652pt>
 File: Figures/PS3/Cm_vs_alpha.png Graphic file (type png)
 
 <use Figures/PS3/Cm_vs_alpha.png>
-Package pdftex.def Info: Figures/PS3/Cm_vs_alpha.png used on input line 214.
-(pdftex.def)             Requested size: 328.82707pt x 259.99463pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/power_consumption.png, id=100, 535.7616pt x 445.665pt>
+<Figures/PS3/power_consumption.png, id=105, 535.7616pt x 445.665pt>
 File: Figures/PS3/power_consumption.png Graphic file (type png)
 
 <use Figures/PS3/power_consumption.png>
-Package pdftex.def Info: Figures/PS3/power_consumption.png used on input line 2
-19.
-(pdftex.def)             Requested size: 328.82707pt x 273.53493pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./Figures/PS3/Teff.png> <./Figures/PS3/Thrust.png> <./Figures/PS3/SkynetV3
-_XFLR_pic.png>]
-
-LaTeX Warning: Text page 18 contains only floats.
-
-[18 <./Figures/PS3/CL_vs_alpha.png> <./Figures/PS3/CL_vs_CD.png>]
+[18 <./Figures/PS3/Teff.png (PNG copy)> <./Figures/PS3/Thrust.png (PNG copy)> <
+./Figures/PS3/SkynetV3_XFLR_pic.png>]
 
 LaTeX Warning: Text page 19 contains only floats.
 
-[19 <./Figures/PS3/CL-CD_vs_V.png> <./Figures/PS3/Cm_vs_alpha.png>]
-<Figures/PS2/SkynetV1_eig.png, id=116, 549.4929pt x 444.2196pt>
+[19 <./Figures/PS3/CL_vs_alpha.png> <./Figures/PS3/CL_vs_CD.png>]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+[20 <./Figures/PS3/CL-CD_vs_V.png> <./Figures/PS3/Cm_vs_alpha.png>]
+<Figures/PS2/SkynetV1_eig.png, id=121, 549.4929pt x 444.2196pt>
 File: Figures/PS2/SkynetV1_eig.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_eig.png>
-Package pdftex.def Info: Figures/PS2/SkynetV1_eig.png used on input line 265.
-(pdftex.def)             Requested size: 328.82707pt x 265.83566pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS2/SkynetV1_freq.png, id=117, 536.0025pt x 446.1468pt>
+<Figures/PS2/SkynetV1_freq.png, id=122, 536.0025pt x 446.1468pt>
 File: Figures/PS2/SkynetV1_freq.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_freq.png>
-Package pdftex.def Info: Figures/PS2/SkynetV1_freq.png used on input line 270.
-(pdftex.def)             Requested size: 328.82707pt x 273.7013pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS2/SkynetV1_damp.png, id=118, 565.3923pt x 454.0965pt>
+<Figures/PS2/SkynetV1_damp.png, id=123, 565.3923pt x 454.0965pt>
 File: Figures/PS2/SkynetV1_damp.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_damp.png>
-Package pdftex.def Info: Figures/PS2/SkynetV1_damp.png used on input line 275.
-(pdftex.def)             Requested size: 328.82707pt x 264.10368pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CAD/Aircraft_Design_3-3.png, id=119, 614.295pt x 794.97pt>
+<Figures/CAD/Aircraft_Design_3-3.png, id=124, 614.295pt x 794.97pt>
 File: Figures/CAD/Aircraft_Design_3-3.png Graphic file (type png)
 
 <use Figures/CAD/Aircraft_Design_3-3.png>
-Package pdftex.def Info: Figures/CAD/Aircraft_Design_3-3.png used on input line
- 285.
-(pdftex.def)             Requested size: 469.75502pt x 607.9196pt.
 
-
-LaTeX Warning: Float too large for page by 11.08958pt on input line 287.
+LaTeX Warning: Float too large for page by 11.08958pt on input line 284.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CAD/iso.png, id=120, 1226.5825pt x 658.46pt>
+<Figures/CAD/iso.png, id=125, 1226.5825pt x 658.46pt>
 File: Figures/CAD/iso.png Graphic file (type png)
 
 <use Figures/CAD/iso.png>
-Package pdftex.def Info: Figures/CAD/iso.png used on input line 292.
-(pdftex.def)             Requested size: 230.18253pt x 123.56142pt.
-
-<Figures/CAD/top.png, id=121, 1170.3725pt x 662.475pt>
+<Figures/CAD/top.png, id=126, 1170.3725pt x 662.475pt>
 File: Figures/CAD/top.png Graphic file (type png)
 
 <use Figures/CAD/top.png>
-Package pdftex.def Info: Figures/CAD/top.png used on input line 296.
-(pdftex.def)             Requested size: 230.18253pt x 130.28899pt.
-
-<Figures/CAD/side.png, id=122, 1221.56375pt x 507.8975pt>
+<Figures/CAD/side.png, id=127, 1221.56375pt x 507.8975pt>
 File: Figures/CAD/side.png Graphic file (type png)
 
 <use Figures/CAD/side.png>
-Package pdftex.def Info: Figures/CAD/side.png used on input line 301.
-(pdftex.def)             Requested size: 230.18253pt x 95.7033pt.
-
-<Figures/CAD/front.png, id=123, 1210.5225pt x 255.95625pt>
+<Figures/CAD/front.png, id=128, 1210.5225pt x 255.95625pt>
 File: Figures/CAD/front.png Graphic file (type png)
 
 <use Figures/CAD/front.png>
-Package pdftex.def Info: Figures/CAD/front.png used on input line 305.
-(pdftex.def)             Requested size: 230.18253pt x 48.66733pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20 <./Figures/PS3/power_consumption.png>]
+[21 <./Figures/PS3/power_consumption.png>]
 Overfull \vbox (254.84303pt too high) has occurred while \output is active []
 
 
-[21 <./Figures/PS2/SkynetV1_eig.png>]
+[22 <./Figures/PS2/SkynetV1_eig.png>]
 
-LaTeX Warning: Text page 22 contains only floats.
+LaTeX Warning: Text page 23 contains only floats.
 
 
 Overfull \vbox (1.57495pt too high) has occurred while \output is active []
 
 
-[22 <./Figures/PS2/SkynetV1_freq.png> <./Figures/PS2/SkynetV1_damp.png>]
-[23] [24 <./Figures/CAD/Aircraft_Design_3-3.png>] [25 <./Figures/CAD/iso.png> <
-./Figures/CAD/top.png> <./Figures/CAD/side.png> <./Figures/CAD/front.png>]
-(./finalreport.aux (./mission.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[23 <./Figures/PS2/SkynetV1_freq.png> <./Figures/PS2/SkynetV1_damp.png>]
+[24] [25 <./Figures/CAD/Aircraft_Design_3-3.png>] [26 <./Figures/CAD/iso.png (P
+NG copy)> <./Figures/CAD/top.png (PNG copy)> <./Figures/CAD/side.png (PNG copy)
+> <./Figures/CAD/front.png (PNG copy)>] (./finalreport.aux (./mission.aux)) ) 
 Here is how much of TeX's memory you used:
- 3457 strings out of 493488
- 53735 string characters out of 3141326
- 113042 words of memory out of 3000000
- 6667 multiletter control sequences out of 15000+200000
+ 2837 strings out of 495061
+ 42457 string characters out of 1182621
+ 106326 words of memory out of 3000000
+ 5952 multiletter control sequences out of 15000+50000
  22248 words of font info for 61 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,9n,38p,1038b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
-/2012/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2012/texmf-di
-st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/cm-super/sftt1200.pfb>
-Output written on finalreport.pdf (26 pages, 2443166 bytes).
+ 28 hyphenation exceptions out of 8191
+ 36i,9n,38p,1038b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <
+/home/kasthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/ka
+sthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/kasthana/.
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/kasthana/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/kasthana/.texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/kasthana/.texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm1095.600pk> </home/kasthana/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1095.600pk> </home/kasthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+bx1440.600pk> </home/kasthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.6
+00pk> </home/kasthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </
+home/kasthana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/kas
+thana/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1440.600pk> </home/kasthana/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb>
+Output written on finalreport.pdf (27 pages, 3066044 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 617 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
