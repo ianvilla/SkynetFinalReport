@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 JUN 2014 09:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 JUN 2014 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,32 +193,42 @@ t.png>]
 
  [1
 
-] [2
+]
+Underfull \hbox (badness 2837) in paragraph at lines 91--91
+[]\T1/cmr/m/n/10.95 Aerodynamics/Configuration De-sign, Pro-
+ []
 
-] [3] [4] (./finalreport.aux) ) 
+
+Underfull \hbox (badness 4024) in paragraph at lines 95--95
+[]\T1/cmr/m/n/10.95 Jerry, Ak-shay, Ian,
+ []
+
+[2
+
+] [3] [4] [5] (./finalreport.aux) ) 
 Here is how much of TeX's memory you used:
- 2056 strings out of 493633
- 27727 string characters out of 3143378
- 86744 words of memory out of 3000000
- 5334 multiletter control sequences out of 15000+200000
+ 2058 strings out of 493633
+ 27748 string characters out of 3143378
+ 85760 words of memory out of 3000000
+ 5336 multiletter control sequences out of 15000+200000
  14037 words of font info for 34 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 37i,8n,23p,830b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dv
-ips/cm-super/cm-super-t1.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1095.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
-/cm-super/sfbx1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/c
-m-super/sfcc1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-
-super/sfcc1728.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1095.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-supe
-r/sfrm1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/
-sfti1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sf
-tt1200.pfb>
-Output written on finalreport.pdf (5 pages, 248997 bytes).
+ 37i,9n,23p,831b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/en
+c/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
+public/cm-super/sfbx1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
+ic/cm-super/sfcc1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/cm-super/sfcc1728.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/c
+m-super/sfrm1095.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-
+super/sfrm1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-su
+per/sfti1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-supe
+r/sftt1200.pfb>
+Output written on finalreport.pdf (6 pages, 251445 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
