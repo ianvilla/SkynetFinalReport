@@ -608,7 +608,19 @@ By taking snapshots while climbing at the center, we were able to sometimes get 
 % JERRY & KARTIKEY
 % Include observations about about the validity of our approach.
 % What observations from the data might inform future work (beyond the scope of the class).
+\begin{enumerate}
 
+\item Flight 1. As can be seen from table \ref{tab:ResultsSummary}, all targets except for $\#1$ were refined to perfect accuracy of less than $1m$. This gets reflected in the refinement score of $38.76$. The positioning of the true target locations was well suited to our passive search trajectory which lead to a relatively high score on $t_{sight}$ as well. The battery consumption contains three distinct regions corresponding to climb, low curvature turns in Phase-1 and high curvature turns in Phase-2 respectively. It is interesting to note that our overall mission time exceeded 15 minutes and yet we had more than $40 mAh$ of battery left at the end of the mission. The only point of concern was the loss in altitude towards the final part of Phase-2 when the altitude controller could not provide enough elevator control.
+
+\item Flight 2. The second flight saw the airplane struggling against the wind as the altitude controller failed to maintain altitude during Phase-2. While the battery performance was consistent and the overall mission time was close to 16 minutes, the refinement procedure was restricted as it was designed for the field of view obtained near the highest permissible altitude. The tailwind further affected the effectiveness of the airspeed controller as well, which coupled with the low wing loading of the airframe resulted in dutch roll like instabilities.
+
+\item Flight 3. The third flight on Friday saw our worst score of the five flights, primarily on account of the aircraft flying out of the upper bound on altitude due to a strong thermal. As the navigation protocol during Phase-1 is to continue circling around a waypoint until a successful snapshot is taken, and the snapshot feature is disabled when the aircraft is out bounds, it drained away an excessive amount of battery and mission time. While the mission still managed to procure around $3m$ accuracy on refinement from the residual battery, out $t_{sight}$ score was very low. This flight highlighted serious limitations of the airplane  to operate in windy/thermal conditions.
+
+\item Flight 4. Everything went as theoretically predicted on the fourth flight. Our $t_{sight}$ score was very close to the empirical mean obtained during simulations. The previous flights allowed us to fine tune our altitude controller which helped to keep better control on altitude. Phase-2 was entirely successful as all four of our targets got refined to almost perfect accuracy.
+
+\item Flight 5. Our final flight (and third declared mulligan) suffered at the hands of a particularly ill-positioned target set coupled with a too-simple target-visiting order for Phase-2. The airplane had to traverse the entire trajectory for the passive search in Phase-1 (worst case scenario) which depleted a lot of battery. However, until that flight we had programmed the airplane to simply refine the targets in reverse order of having sighted them in Phase-1 (we included and tested an actual sort procedure thereafter). This non-optimal logic harmed our score severely as a lot of battery got wasted in going back and forth between targets. As can be seen from the plot 	of Target Position Error against time, the refinement procedure needed only an additional $10 s$ to complete refinement on target $\#3$ before the battery ran out. This lead to a poor score on refinement overall, even though the other targets had been refined reasonably.
+
+\end{enumerate}
 
 \section{Conclusions \& Lessons Learned}
 	\label{Conclusion}
