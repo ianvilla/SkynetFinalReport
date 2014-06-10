@@ -7,6 +7,7 @@
 \usepackage{subcaption}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{placeins}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 %\def\wl{\par \vspace{\baselineskip}}
@@ -159,7 +160,7 @@
 
 		\begin{table}[!ht]
 			\begin{center}
-				\begin{tabular}{| c | c |}
+				\begin{tabular}{| c | p{7cm} |}
 					\hline
 					\textbf{Flight Team Role} & \textbf{Members} \\ \hline
 					Pilots & Peter (Competition) \& Brandon (Testing) \\ \hline
@@ -394,20 +395,101 @@
         \caption{Solidworks model screenshots}\label{fig:SW}
     \end{figure}
 
-% AKSHAY & SRAVYA
-% Include in this section a Three View Drawing of the Plane
-
-
+\FloatBarrier
 \section{Controls}
-	\label{Controls}
-	\subsection{Control Strategy}
-	\label{CtrlStr}
-	\subsection{Flight Performance}
-	\label{CtrlFlightPerf}
+\label{Controls}
+\subsection{Control Strategy}
+\label{CtrlStr}
+
+The controller for the aircraft used successive loop closure to obtain the closed loop performance necessary to complete our missions. The strategy was to provide the navigation team with a robust interface that they could use to carry out the mission. This interface sectioned off the inner loop controls from the outer loop / guidance and navigation controls. The interface that the navigation team had to work with was commanded ground speed, commanded heading, and commanded altitude. These three references were used dynamically by the navigation team to carry out our complete mission.
+
+Waypoint navigation was obtained by commanding heading, ground speed, and altitude in the medium (10 Hz) AUTO loop. The inner loop controllers ran at within the 50 Hz loop to maintain the commanded heading, ground speed, and altitude. This interface was the most important, and most difficult to realize in order to accomplish the relatively complex mission profile.
+
+\paragraph{Inner Loop Controllers}
+The inner most controllers consisted of three PID loops to command throttle, elevator deflection, and aileron deflection. To obtain the correct airspeed, a throttle scheduler was used as a feedforward term to overcome the nonlinearities in the throttle command over the aircraft's airspeed envelope. For the pitch and roll controllers, simple PI control sufficed.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/PitchAngleController}
+\caption{Pitch Angle Controller}
+\label{fig:PitchAngleController}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/RollAngleController}
+\caption{Roll Angle Controller}
+\label{fig:RollAngleController}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/AirspeedController}
+\caption{Airspeed Controller}
+\label{fig:AirspeedController}
+\end{figure}
+
+The altitude controller relied on the ability of the airspeed controller to maintain a relatively constant airspeed even with disturbances due to wind, roll angle changes, and pitch angle changes in the aircraft. Trim states for steady level flight, 15 degree roll turns, and 30 degree roll turns were determined experimentally across the entire airspeed envelope of 8.5 m/s to 13.5 m/s. Once the trim state altitude holding states were known, the pitch angle scheduler was built using switch case statements and a discretized state space of the airspeed and roll angle commands. The altitude controller relied heavily on the scheduler and only allowed small perturbations in pitch angle to maintain the altitude. The limiters on this controller in particular were too restrictive to begin with and therefore in windy conditions, the controller did not have enough authority to maintain constant altitude.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/AltitudeController}
+\caption{Altitude Controller}
+\label{fig:AltitudeController}
+\end{figure}
+
+The heading controller looped around the roll angle controller to provide the navigation team with heading command tracking. The heading controller was the only controller to use full PID control in order to dampen the oscillations of heading hold / heading tracking at low airspeeds. The introduction of derivative term control was key in gaining robustness in the controller during the refinement phase of our mission at the low (sub 9 m/s) airspeeds.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/HeadingController}
+\caption{Heading Controller}
+\label{fig:HeadingController}
+\end{figure}
+
+The last of the inner loop controllers to be used to provide the complete interface for the navigation team was the ground speed controller. This controller took a ground speed reference that was dynamically updating from the mission management and commanded an airspeed for the airspeed controller to track. In reality, we never really got around to dynamically changing the ground speed and simply opted to maintain a single ground speed in the first phase of the mission and a second (slower) ground speed during the second phase of the mission.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/GroundSpeedController}
+\caption{Ground Speed Controller}
+\label{fig:GroundSpeedController}
+\end{figure}
+
+\subsection{Flight Performance}
+\label{CtrlFlightPerf}
 % BRANDON
 % Include in this section Initial Approach vs. Final Choices
 
+The successive loop strategy worked well for the job that was required by our mission plan. Experimental results were almost always needed in order to tune the gains for each individual controller and an extensive steady state level flight / banked constant altitude set of experiments led to the trim schedulers needed. The initial plan for controller design was to use a quick successive loop closure controller for the preliminary problem sets and migrate to a linear quadratic regulator eventually. The quick controller was programmed in C++ and ready for testing several weeks prior to the line tracking problem set. However, our team ran up against two road blocks: the first was that we needed CAD models of the aircraft design in order to laser cut the aircraft, the second was that we ran out of flash memory and weren't aware that we could remove much of the APM code to give us more program memory space.
 
+The first issue caused the controller design to halt for about 10-14 days while laser cut prototypes were cut, built, and tested. The second issue caused a complete refactoring of the simple inner loop controls in order to get something flyable as soon as possible. By the time these two issues were resolved, there was no time to continue development on the LQR controller.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/AltitudeHoldPerformance}
+\caption{Altitude Hold Performance}
+\label{fig:AltitudeHoldPerformance}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/AirspeedHoldPerformance}
+\caption{Airspeed Hold Performance}
+\label{fig:AirspeedHoldPerformance}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./Figures/PositionHistory}
+\caption{XY Position History}
+\label{fig:PositionHistory}
+\end{figure}
+
+
+Figures \ref{fig:AirspeedHoldPerformance} and \ref{fig:AltitudeHoldPerformance} demonstrate the inner loop controllers' ability to hold airspeed and altitude during the mission. The heading control acheived is evidenced by the XY gps position time history of our missions (Figure \ref{fig:PositionHistory}).
+
+\FloatBarrier
 \section{Fabrication}
 	\label{Fabrication}
 	\subsection{Prototype Construction Approach}
