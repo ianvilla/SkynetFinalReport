@@ -526,7 +526,7 @@ Figures \ref{fig:AirspeedHoldPerformance} and \ref{fig:AltitudeHoldPerformance} 
 	\end{align*}
 	where $(x_{wp},y_{wp})$ are waypoint locations. The first equation forces the plane to track a line tangent to a circle centered around a specified centroid $(x_{centroid},y_{centroid})$. For the spiral, the centroid is set to $(0,0)$. For phase 2 refinement, the centroid is changes according to target locations. The second equation is forces the plane to track a line between waypoints. This is essential for moving between inner circles of the spiral. During flight testing, these proved to be the most robust.\\
 
-	To improve reliability, a check was made to ensure the plane would always move towards a waypoint. If the plane was outside a 45 degree field of view of the waypoint or if the plane was within 10 meters of a waypoint, the plane was commanded to move directly towards the waypoint. The figure below shows an example of the algorithm during a test flight,
+	To improve reliability, a check was made to ensure the plane would always move towards a waypoint. If the plane was outside a 45 degree field of view of the waypoint or if the plane was within 10 meters of a waypoint, the plane was commanded to move directly towards the waypoint.
 
 	\subsubsection{Phase 1 testing}
 	At the start of a mission, the plane is commanded to increase in altitude at a maximum climb rate to a specified altitude. Once the altitude is reached, the plane flies through a series of transition points which help it navigate into a spiral more smoothly. Once the spiral is initiated, snapshots are taken at each waypoint to ensure maximum coverage of the entire area. Phase 1 transitions into phase 2 once all targets are acquired. If all targets are not found within the spiral, the plane reinitializes a new spiral.\\
@@ -562,6 +562,9 @@ By taking snapshots while climbing at the center, we were able to sometimes get 
 \subsection{Simulation vs. Actual Tests}
 \label{simvsact}
 %%% Kartikey please summarize the differences between your envisioned mission plan and what the plane actually does %%%
+The plane performed better than expected in most aspects of the mission plan. The only real issue in being able to deliver results similar to the mission simulator was the ability of the plane to maintain constant airspeed and altitude. The mission did not work properly when the conditions were windy. A small wind could change the plane's airspeed or altitude dramatically which lead to lower scores. The mission would have performed much more reliably if the plane could properly maintain altitude and airspeed even in windy conditions.\\
+
+Another big difference between the actual mission and the mission strategy was the time to sight all targets. Realistically, it was much more difficult to fly a fast speed and still capture waypoints with an extreme precision. The mission speed had to be reduced to accommodate for the realistic flight speeds of the plane.
 
 %%%%%%%%%%%%%%%% End: Flight Testing %%%%%%%%%%%%%%%%%%%
 
