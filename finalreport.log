@@ -1,21 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.29)  10 JUN 2014 06:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 JUN 2014 17:42
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **finalreport.tex
-(C:\GIT\SkynetFinalReport\finalreport.tex
+(./finalreport.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,26 +33,20 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("D:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("D:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-("D:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
@@ -58,35 +55,35 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("D:\Program Files\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -94,28 +91,26 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen106
 \captionmargin@=\dimen107
 \captionwidth=\dimen108
-\caption@tempdima=\dimen109
-\caption@indent=\dimen110
-\caption@parindent=\dimen111
-\caption@hangindent=\dimen112
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
 )
 \c@ContinuedFloat=\count89
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
 \c@subfigure=\count90
 \c@subtable=\count91
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
@@ -123,24 +118,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("D:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
-\ex@=\dimen113
+\ex@=\dimen112
 ))
-("D:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen114
+\pmbraise@=\dimen113
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count92
@@ -155,7 +150,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen115
+\big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count97
@@ -168,12 +163,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count102
 \maxfields@=\count103
 \andhelp@=\toks18
-\eqnshift@=\dimen116
-\alignsep@=\dimen117
-\tagshift@=\dimen118
-\tagwidth@=\dimen119
-\totwidth@=\dimen120
-\lineht@=\dimen121
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
 \@envbody=\toks19
 \multlinegap=\skip45
 \multlinetaggap=\skip46
@@ -181,14 +176,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(C:\GIT\SkynetFinalReport\finalreport.aux
+(./finalreport.aux
 
 LaTeX Warning: Label `Mission' multiply defined.
 
 )
+\openout1 = `finalreport.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -201,49 +198,99 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
- ("D:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
-\scratchdimen=\dimen122
+\scratchdimen=\dimen121
 \scratchbox=\box28
 \nofMPsegments=\count105
 \nofMParguments=\count106
 \everyMPshowfont=\toks21
 \MPscratchCnt=\count107
-\MPscratchDim=\dimen123
+\MPscratchDim=\dimen122
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks22
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- <./skynet.png, id=1, 1838.87pt x 260.975pt>
+
+<./skynet.png, id=1, 1838.87pt x 260.975pt>
 File: ./skynet.png Graphic file (type png)
  <use ./skynet.png>
 Package pdftex.def Info: ./skynet.png used on input line 24.
 (pdftex.def)             Requested size: 469.75502pt x 66.6652pt.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 35.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/GIT/SkynetFinalReport/
-skynet.png>]
-(C:\GIT\SkynetFinalReport\finalreport.toc [1
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./skyne
+t.png>]
+(./finalreport.toc [1
 
 ])
 \tf@toc=\write3
+\openout3 = `finalreport.toc'.
+
  [2]
 Underfull \hbox (badness 2837) in paragraph at lines 97--97
 []\T1/cmr/m/n/10.95 Aerodynamics/Configuration De-sign, Pro-
@@ -261,110 +308,107 @@ Underfull \hbox (badness 2837) in paragraph at lines 132--132
 []\T1/cmr/m/n/10.95 Aerodynamics/Configuration De-sign, Pro-
  []
 
-[4] (C:\GIT\SkynetFinalReport\mission.tex [5]
+[4] (./mission.tex [5]
 Overfull \hbox (5.35175pt too wide) in paragraph at lines 12--13
 []\T1/cmr/bx/n/10.95 Time com-po-nent\T1/cmr/m/n/10.95 : Pos-i-tive real, un-bo
 unded above (save for phys-i-cal con-straints) and bounded
  []
 
-[6] <Figures/mission_phase1_a.png, id=44, 287.57437pt x 193.47281pt>
+[6] <Figures/mission_phase1_a.png, id=45, 287.57437pt x 193.47281pt>
 File: Figures/mission_phase1_a.png Graphic file (type png)
 
 <use Figures/mission_phase1_a.png>
 Package pdftex.def Info: Figures/mission_phase1_a.png used on input line 39.
 (pdftex.def)             Requested size: 215.68025pt x 145.10425pt.
 
-<Figures/mission_phase1_b.png, id=45, 263.48438pt x 185.19188pt>
+<Figures/mission_phase1_b.png, id=46, 263.48438pt x 185.19188pt>
 File: Figures/mission_phase1_b.png Graphic file (type png)
 
 <use Figures/mission_phase1_b.png>
 Package pdftex.def Info: Figures/mission_phase1_b.png used on input line 48.
 (pdftex.def)             Requested size: 197.61278pt x 138.89355pt.
 
-<Figures/mission_phase1_c.png, id=46, 310.91156pt x 298.86656pt>
+<Figures/mission_phase1_c.png, id=47, 310.91156pt x 298.86656pt>
 File: Figures/mission_phase1_c.png Graphic file (type png)
 
 <use Figures/mission_phase1_c.png>
 Package pdftex.def Info: Figures/mission_phase1_c.png used on input line 65.
 (pdftex.def)             Requested size: 233.18307pt x 224.14935pt.
- [7 <C:/GIT/SkynetFinalReport/Figures/mission_phase1_a.png> <C:/GIT/SkynetFinal
-Report/Figures/mission_phase1_b.png>]
+ [7 <./Figures/mission_phase1_a.png> <./Figures/mission_phase1_b.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
- [8 <C:/GIT/SkynetFinalReport/Figures/mission_phase1_c.png>]
-<Figures/mission_phase2_a.png, id=53, 395.97937pt x 346.29375pt>
+ [8 <./Figures/mission_phase1_c.png>]
+<Figures/mission_phase2_a.png, id=54, 395.97937pt x 346.29375pt>
 File: Figures/mission_phase2_a.png Graphic file (type png)
 
 <use Figures/mission_phase2_a.png>
 Package pdftex.def Info: Figures/mission_phase2_a.png used on input line 114.
 (pdftex.def)             Requested size: 296.9838pt x 259.71967pt.
 
-<Figures/mission_phase2_b.png, id=54, 328.97906pt x 277.78781pt>
+<Figures/mission_phase2_b.png, id=55, 328.97906pt x 277.78781pt>
 File: Figures/mission_phase2_b.png Graphic file (type png)
 
 <use Figures/mission_phase2_b.png>
 Package pdftex.def Info: Figures/mission_phase2_b.png used on input line 121.
 (pdftex.def)             Requested size: 246.73369pt x 208.34033pt.
 
-<Figures/mission_phase2_c.png, id=55, 380.92313pt x 310.91156pt>
+<Figures/mission_phase2_c.png, id=56, 380.92313pt x 310.91156pt>
 File: Figures/mission_phase2_c.png Graphic file (type png)
 
 <use Figures/mission_phase2_c.png>
 Package pdftex.def Info: Figures/mission_phase2_c.png used on input line 128.
 (pdftex.def)             Requested size: 285.69164pt x 233.18307pt.
- [9] [10 <C:/GIT/SkynetFinalReport/Figures/mission_phase2_a.png> <C:/GIT/Skynet
-FinalReport/Figures/mission_phase2_b.png>]
-[11 <C:/GIT/SkynetFinalReport/Figures/mission_phase2_c.png>]
-<Figures/mission_tpea_a.png, id=65, 182.93344pt x 177.66376pt>
+ [9] [10 <./Figures/mission_phase2_a.png> <./Figures/mission_phase2_b.png>] [11
+ <./Figures/mission_phase2_c.png>]
+<Figures/mission_tpea_a.png, id=66, 182.93344pt x 177.66376pt>
 File: Figures/mission_tpea_a.png Graphic file (type png)
 
 <use Figures/mission_tpea_a.png>
 Package pdftex.def Info: Figures/mission_tpea_a.png used on input line 177.
 (pdftex.def)             Requested size: 182.93298pt x 177.66331pt.
 
-<Figures/mission_tpea_b.png, id=66, 134.75343pt x 209.28188pt>
+<Figures/mission_tpea_b.png, id=67, 134.75343pt x 209.28188pt>
 File: Figures/mission_tpea_b.png Graphic file (type png)
 
 <use Figures/mission_tpea_b.png>
 Package pdftex.def Info: Figures/mission_tpea_b.png used on input line 192.
 (pdftex.def)             Requested size: 101.06482pt x 156.961pt.
 
-<Figures/mission_tpea_c.png, id=67, 217.5628pt x 229.60782pt>
+<Figures/mission_tpea_c.png, id=68, 217.5628pt x 229.60782pt>
 File: Figures/mission_tpea_c.png Graphic file (type png)
 
 <use Figures/mission_tpea_c.png>
 Package pdftex.def Info: Figures/mission_tpea_c.png used on input line 206.
 (pdftex.def)             Requested size: 163.17169pt x 172.20543pt.
 
-<Figures/mission_tpea_d.png, id=68, 350.05782pt x 176.15813pt>
+<Figures/mission_tpea_d.png, id=69, 350.05782pt x 176.15813pt>
 File: Figures/mission_tpea_d.png Graphic file (type png)
 
 <use Figures/mission_tpea_d.png>
 Package pdftex.def Info: Figures/mission_tpea_d.png used on input line 218.
 (pdftex.def)             Requested size: 262.54271pt x 132.11826pt.
- [12 <C:/GIT/SkynetFinalReport/Figures/mission_tpea_a.png>] [13 <C:/GIT/SkynetF
-inalReport/Figures/mission_tpea_b.png> <C:/GIT/SkynetFinalReport/Figures/missio
-n_tpea_c.png> <C:/GIT/SkynetFinalReport/Figures/mission_tpea_d.png>]
-<Figures/mission_stats_a.png, id=76, 441.14813pt x 366.61969pt>
+ [12 <./Figures/mission_tpea_a.png>] [13 <./Figures/mission_tpea_b.png> <./Figu
+res/mission_tpea_c.png> <./Figures/mission_tpea_d.png>] <Figures/mission_stats_
+a.png, id=77, 441.14813pt x 366.61969pt>
 File: Figures/mission_stats_a.png Graphic file (type png)
 
 <use Figures/mission_stats_a.png>
 Package pdftex.def Info: Figures/mission_stats_a.png used on input line 231.
 (pdftex.def)             Requested size: 330.86028pt x 274.96408pt.
- [14 <C:/GIT/SkynetFinalReport/Figures/mission_stats_a.png>] <Figures/mission_s
-tats_b.png, id=80, 445.665pt x 362.85562pt>
+ [14 <./Figures/mission_stats_a.png>]
+<Figures/mission_stats_b.png, id=81, 445.665pt x 362.85562pt>
 File: Figures/mission_stats_b.png Graphic file (type png)
 
 <use Figures/mission_stats_b.png>
 Package pdftex.def Info: Figures/mission_stats_b.png used on input line 249.
 (pdftex.def)             Requested size: 334.24792pt x 272.14105pt.
-) [15 <C:/GIT/SkynetFinalReport/Figures/mission_stats_b.png>]
-<Figures/PS3/propmotor_v07p0.png, id=84, 1029.8475pt x 797.98125pt>
+) [15 <./Figures/mission_stats_b.png>]
+<Figures/PS3/propmotor_v07p0.png, id=85, 1029.8475pt x 797.98125pt>
 File: Figures/PS3/propmotor_v07p0.png Graphic file (type png)
 
 <use Figures/PS3/propmotor_v07p0.png>
@@ -372,7 +416,7 @@ Package pdftex.def Info: Figures/PS3/propmotor_v07p0.png used on input line 229
 .
 (pdftex.def)             Requested size: 230.18253pt x 178.35693pt.
 
-<Figures/PS3/propmotor_v12p0.png, id=85, 1041.8925pt x 785.93625pt>
+<Figures/PS3/propmotor_v12p0.png, id=86, 1041.8925pt x 785.93625pt>
 File: Figures/PS3/propmotor_v12p0.png Graphic file (type png)
 
 <use Figures/PS3/propmotor_v12p0.png>
@@ -383,7 +427,7 @@ Package pdftex.def Info: Figures/PS3/propmotor_v12p0.png used on input line 233
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16] <Figures/PS3/propmotor_opt.png, id=92, 1011.78pt x 783.92876pt>
+[16] <Figures/PS3/propmotor_opt.png, id=93, 1011.78pt x 783.92876pt>
 File: Figures/PS3/propmotor_opt.png Graphic file (type png)
 
 <use Figures/PS3/propmotor_opt.png>
@@ -393,14 +437,14 @@ Package pdftex.def Info: Figures/PS3/propmotor_opt.png used on input line 243.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/Teff.png, id=93, 965.6075pt x 784.9325pt>
+<Figures/PS3/Teff.png, id=94, 965.6075pt x 784.9325pt>
 File: Figures/PS3/Teff.png Graphic file (type png)
 
 <use Figures/PS3/Teff.png>
 Package pdftex.def Info: Figures/PS3/Teff.png used on input line 252.
 (pdftex.def)             Requested size: 230.18253pt x 187.1061pt.
 
-<Figures/PS3/Thrust.png, id=94, 979.66pt x 769.87625pt>
+<Figures/PS3/Thrust.png, id=95, 979.66pt x 769.87625pt>
 File: Figures/PS3/Thrust.png Graphic file (type png)
 
 <use Figures/PS3/Thrust.png>
@@ -410,9 +454,8 @@ Package pdftex.def Info: Figures/PS3/Thrust.png used on input line 256.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <C:/GIT/SkynetFinalReport/Figures/PS3/propmotor_v07p0.png> <C:/GIT/SkynetFi
-nalReport/Figures/PS3/propmotor_v12p0.png>]
-<Figures/PS3/SkynetV3_XFLR_pic.png, id=99, 735.74875pt x 610.28pt>
+[17 <./Figures/PS3/propmotor_v07p0.png> <./Figures/PS3/propmotor_v12p0.png>]
+<Figures/PS3/SkynetV3_XFLR_pic.png, id=100, 735.74875pt x 610.28pt>
 File: Figures/PS3/SkynetV3_XFLR_pic.png Graphic file (type png)
 
 <use Figures/PS3/SkynetV3_XFLR_pic.png>
@@ -423,7 +466,7 @@ Package pdftex.def Info: Figures/PS3/SkynetV3_XFLR_pic.png used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL_vs_alpha.png, id=101, 546.3612pt x 445.1832pt>
+<Figures/PS3/CL_vs_alpha.png, id=102, 546.3612pt x 445.1832pt>
 File: Figures/PS3/CL_vs_alpha.png Graphic file (type png)
 
 <use Figures/PS3/CL_vs_alpha.png>
@@ -433,7 +476,7 @@ Package pdftex.def Info: Figures/PS3/CL_vs_alpha.png used on input line 286.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL_vs_CD.png, id=102, 546.843pt x 444.7014pt>
+<Figures/PS3/CL_vs_CD.png, id=103, 546.843pt x 444.7014pt>
 File: Figures/PS3/CL_vs_CD.png Graphic file (type png)
 
 <use Figures/PS3/CL_vs_CD.png>
@@ -443,7 +486,7 @@ Package pdftex.def Info: Figures/PS3/CL_vs_CD.png used on input line 291.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/CL-CD_vs_V.png, id=103, 539.616pt x 444.7014pt>
+<Figures/PS3/CL-CD_vs_V.png, id=104, 539.616pt x 444.7014pt>
 File: Figures/PS3/CL-CD_vs_V.png Graphic file (type png)
 
 <use Figures/PS3/CL-CD_vs_V.png>
@@ -453,7 +496,7 @@ Package pdftex.def Info: Figures/PS3/CL-CD_vs_V.png used on input line 296.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/Cm_vs_alpha.png, id=104, 556.9608pt x 440.3652pt>
+<Figures/PS3/Cm_vs_alpha.png, id=105, 556.9608pt x 440.3652pt>
 File: Figures/PS3/Cm_vs_alpha.png Graphic file (type png)
 
 <use Figures/PS3/Cm_vs_alpha.png>
@@ -463,7 +506,7 @@ Package pdftex.def Info: Figures/PS3/Cm_vs_alpha.png used on input line 301.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS3/power_consumption.png, id=105, 535.7616pt x 445.665pt>
+<Figures/PS3/power_consumption.png, id=106, 535.7616pt x 445.665pt>
 File: Figures/PS3/power_consumption.png Graphic file (type png)
 
 <use Figures/PS3/power_consumption.png>
@@ -474,20 +517,17 @@ Package pdftex.def Info: Figures/PS3/power_consumption.png used on input line 3
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <C:/GIT/SkynetFinalReport/Figures/PS3/propmotor_opt.png>] [19 <C:/GIT/Skyne
-tFinalReport/Figures/PS3/Teff.png> <C:/GIT/SkynetFinalReport/Figures/PS3/Thrust
-.png> <C:/GIT/SkynetFinalReport/Figures/PS3/SkynetV3_XFLR_pic.png>]
+[18 <./Figures/PS3/propmotor_opt.png>] [19 <./Figures/PS3/Teff.png> <./Figures/
+PS3/Thrust.png> <./Figures/PS3/SkynetV3_XFLR_pic.png>]
 
 LaTeX Warning: Text page 20 contains only floats.
 
-[20 <C:/GIT/SkynetFinalReport/Figures/PS3/CL_vs_alpha.png> <C:/GIT/SkynetFinalR
-eport/Figures/PS3/CL_vs_CD.png>]
+[20 <./Figures/PS3/CL_vs_alpha.png> <./Figures/PS3/CL_vs_CD.png>]
 
 LaTeX Warning: Text page 21 contains only floats.
 
-[21 <C:/GIT/SkynetFinalReport/Figures/PS3/CL-CD_vs_V.png> <C:/GIT/SkynetFinalRe
-port/Figures/PS3/Cm_vs_alpha.png>]
-<Figures/PS2/SkynetV1_eig.png, id=124, 549.4929pt x 444.2196pt>
+[21 <./Figures/PS3/CL-CD_vs_V.png> <./Figures/PS3/Cm_vs_alpha.png>]
+<Figures/PS2/SkynetV1_eig.png, id=125, 549.4929pt x 444.2196pt>
 File: Figures/PS2/SkynetV1_eig.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_eig.png>
@@ -497,7 +537,7 @@ Package pdftex.def Info: Figures/PS2/SkynetV1_eig.png used on input line 352.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS2/SkynetV1_freq.png, id=125, 536.0025pt x 446.1468pt>
+<Figures/PS2/SkynetV1_freq.png, id=126, 536.0025pt x 446.1468pt>
 File: Figures/PS2/SkynetV1_freq.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_freq.png>
@@ -507,7 +547,7 @@ Package pdftex.def Info: Figures/PS2/SkynetV1_freq.png used on input line 357.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/PS2/SkynetV1_damp.png, id=126, 565.3923pt x 454.0965pt>
+<Figures/PS2/SkynetV1_damp.png, id=127, 565.3923pt x 454.0965pt>
 File: Figures/PS2/SkynetV1_damp.png Graphic file (type png)
 
 <use Figures/PS2/SkynetV1_damp.png>
@@ -517,7 +557,7 @@ Package pdftex.def Info: Figures/PS2/SkynetV1_damp.png used on input line 362.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CAD/Aircraft_Design_3-3.png, id=127, 614.295pt x 794.97pt>
+<Figures/CAD/Aircraft_Design_3-3.png, id=128, 614.295pt x 794.97pt>
 File: Figures/CAD/Aircraft_Design_3-3.png Graphic file (type png)
 
 <use Figures/CAD/Aircraft_Design_3-3.png>
@@ -531,28 +571,28 @@ LaTeX Warning: Float too large for page by 11.08958pt on input line 374.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CAD/iso.png, id=128, 1226.5825pt x 658.46pt>
+<Figures/CAD/iso.png, id=129, 1226.5825pt x 658.46pt>
 File: Figures/CAD/iso.png Graphic file (type png)
 
 <use Figures/CAD/iso.png>
 Package pdftex.def Info: Figures/CAD/iso.png used on input line 379.
 (pdftex.def)             Requested size: 230.18253pt x 123.56142pt.
 
-<Figures/CAD/top.png, id=129, 1170.3725pt x 662.475pt>
+<Figures/CAD/top.png, id=130, 1170.3725pt x 662.475pt>
 File: Figures/CAD/top.png Graphic file (type png)
 
 <use Figures/CAD/top.png>
 Package pdftex.def Info: Figures/CAD/top.png used on input line 383.
 (pdftex.def)             Requested size: 230.18253pt x 130.28899pt.
 
-<Figures/CAD/side.png, id=130, 1221.56375pt x 507.8975pt>
+<Figures/CAD/side.png, id=131, 1221.56375pt x 507.8975pt>
 File: Figures/CAD/side.png Graphic file (type png)
 
 <use Figures/CAD/side.png>
 Package pdftex.def Info: Figures/CAD/side.png used on input line 388.
 (pdftex.def)             Requested size: 230.18253pt x 95.7033pt.
 
-<Figures/CAD/front.png, id=131, 1210.5225pt x 255.95625pt>
+<Figures/CAD/front.png, id=132, 1210.5225pt x 255.95625pt>
 File: Figures/CAD/front.png Graphic file (type png)
 
 <use Figures/CAD/front.png>
@@ -562,14 +602,11 @@ Package pdftex.def Info: Figures/CAD/front.png used on input line 392.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <C:/GIT/SkynetFinalReport/Figures/PS3/power_consumption.png>] [23 <C:/GIT/S
-kynetFinalReport/Figures/PS2/SkynetV1_eig.png>] [24 <C:/GIT/SkynetFinalReport/F
-igures/PS2/SkynetV1_freq.png> <C:/GIT/SkynetFinalReport/Figures/PS2/SkynetV1_da
-mp.png>] [25 <C:/GIT/SkynetFinalReport/Figures/CAD/Aircraft_Design_3-3.png>]
-[26 <C:/GIT/SkynetFinalReport/Figures/CAD/iso.png> <C:/GIT/SkynetFinalReport/Fi
-gures/CAD/top.png> <C:/GIT/SkynetFinalReport/Figures/CAD/side.png> <C:/GIT/Skyn
-etFinalReport/Figures/CAD/front.png>]
-<./Figures/PitchAngleController.png, id=153, 612.78937pt x 232.61906pt>
+[22 <./Figures/PS3/power_consumption.png>] [23 <./Figures/PS2/SkynetV1_eig.png>
+] [24 <./Figures/PS2/SkynetV1_freq.png> <./Figures/PS2/SkynetV1_damp.png>]
+[25 <./Figures/CAD/Aircraft_Design_3-3.png>] [26 <./Figures/CAD/iso.png> <./Fig
+ures/CAD/top.png> <./Figures/CAD/side.png> <./Figures/CAD/front.png>]
+<./Figures/PitchAngleController.png, id=154, 612.78937pt x 232.61906pt>
 File: ./Figures/PitchAngleController.png Graphic file (type png)
 
 <use ./Figures/PitchAngleController.png>
@@ -577,7 +614,7 @@ Package pdftex.def Info: ./Figures/PitchAngleController.png used on input line
 413.
 (pdftex.def)             Requested size: 469.75502pt x 178.32214pt.
 
-<./Figures/RollAngleController.png, id=154, 599.99156pt x 223.58531pt>
+<./Figures/RollAngleController.png, id=155, 599.99156pt x 223.58531pt>
 File: ./Figures/RollAngleController.png Graphic file (type png)
 
 <use ./Figures/RollAngleController.png>
@@ -588,7 +625,7 @@ Package pdftex.def Info: ./Figures/RollAngleController.png used on input line 4
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/AirspeedController.png, id=155, 645.91313pt x 278.54062pt>
+<./Figures/AirspeedController.png, id=156, 645.91313pt x 278.54062pt>
 File: ./Figures/AirspeedController.png Graphic file (type png)
 
 <use ./Figures/AirspeedController.png>
@@ -599,7 +636,7 @@ Package pdftex.def Info: ./Figures/AirspeedController.png used on input line 42
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/AltitudeController.png, id=156, 648.17157pt x 277.035pt>
+<./Figures/AltitudeController.png, id=157, 648.17157pt x 277.035pt>
 File: ./Figures/AltitudeController.png Graphic file (type png)
 
 <use ./Figures/AltitudeController.png>
@@ -612,8 +649,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27
 
- <C:/GIT/SkynetFinalReport/Figures/PitchAngleController.png>]
-<./Figures/HeadingController.png, id=161, 641.39626pt x 240.9pt>
+ <./Figures/PitchAngleController.png>]
+<./Figures/HeadingController.png, id=162, 641.39626pt x 240.9pt>
 File: ./Figures/HeadingController.png Graphic file (type png)
 
 <use ./Figures/HeadingController.png>
@@ -624,7 +661,7 @@ Package pdftex.def Info: ./Figures/HeadingController.png used on input line 445
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/GroundSpeedController.png, id=162, 648.17157pt x 236.38312pt>
+<./Figures/GroundSpeedController.png, id=163, 648.17157pt x 236.38312pt>
 File: ./Figures/GroundSpeedController.png Graphic file (type png)
 
 <use ./Figures/GroundSpeedController.png>
@@ -635,10 +672,9 @@ Package pdftex.def Info: ./Figures/GroundSpeedController.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <C:/GIT/SkynetFinalReport/Figures/RollAngleController.png> <C:/GIT/SkynetFi
-nalReport/Figures/AirspeedController.png>] [29 <C:/GIT/SkynetFinalReport/Figure
-s/AltitudeController.png> <C:/GIT/SkynetFinalReport/Figures/HeadingController.p
-ng>] <./Figures/AltitudeHoldPerformance.png, id=173, 1084.05pt x 590.205pt>
+[28 <./Figures/RollAngleController.png> <./Figures/AirspeedController.png>]
+[29 <./Figures/AltitudeController.png> <./Figures/HeadingController.png>]
+<./Figures/AltitudeHoldPerformance.png, id=174, 1084.05pt x 590.205pt>
 File: ./Figures/AltitudeHoldPerformance.png Graphic file (type png)
 
 <use ./Figures/AltitudeHoldPerformance.png>
@@ -646,7 +682,7 @@ Package pdftex.def Info: ./Figures/AltitudeHoldPerformance.png used on input li
 ne 470.
 (pdftex.def)             Requested size: 469.75502pt x 255.75546pt.
 
-<./Figures/AirspeedHoldPerformance.png, id=174, 1084.05pt x 590.205pt>
+<./Figures/AirspeedHoldPerformance.png, id=175, 1084.05pt x 590.205pt>
 File: ./Figures/AirspeedHoldPerformance.png Graphic file (type png)
 
 <use ./Figures/AirspeedHoldPerformance.png>
@@ -657,7 +693,7 @@ ne 477.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/PositionHistory.png, id=175, 1084.05pt x 590.205pt>
+<./Figures/PositionHistory.png, id=176, 1084.05pt x 590.205pt>
 File: ./Figures/PositionHistory.png Graphic file (type png)
 
 <use ./Figures/PositionHistory.png>
@@ -667,13 +703,13 @@ Package pdftex.def Info: ./Figures/PositionHistory.png used on input line 484.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <C:/GIT/SkynetFinalReport/Figures/GroundSpeedController.png> <C:/GIT/Skynet
-FinalReport/Figures/AltitudeHoldPerformance.png (PNG copy)>]
+[30 <./Figures/GroundSpeedController.png> <./Figures/AltitudeHoldPerformance.pn
+g (PNG copy)>]
 Overfull \vbox (187.25345pt too high) has occurred while \output is active []
 
 
-[31 <C:/GIT/SkynetFinalReport/Figures/AirspeedHoldPerformance.png (PNG copy)> <
-C:/GIT/SkynetFinalReport/Figures/PositionHistory.png (PNG copy)>]
+[31 <./Figures/AirspeedHoldPerformance.png (PNG copy)> <./Figures/PositionHisto
+ry.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
@@ -693,48 +729,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
-[33] [34] (C:\GIT\SkynetFinalReport\finalreport.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+[34] [35] [36] (./finalreport.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3811 strings out of 494045
- 56892 string characters out of 3148354
- 111671 words of memory out of 3000000
- 7007 multiletter control sequences out of 15000+200000
+ 4129 strings out of 493488
+ 62956 string characters out of 3141326
+ 125048 words of memory out of 3000000
+ 7310 multiletter control sequences out of 15000+200000
  22248 words of font info for 61 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 36i,9n,38p,1040b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecrm1000.pk> <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\brandon.jennings\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\bra
-ndon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0
-800.pk> <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbx1200.pk> <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\brandon.jennings\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\User
-s\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1440.pk> <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\brandon.jennings\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\brandon.jennin
-gs\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:
-\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\eccc1440.pk> <C:\Users\brandon.jennings\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\eccc1728.pk><D:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on finalreport.pdf (35 pages, 2694132 bytes).
+ 957 hyphenation exceptions out of 8191
+ 38i,9n,38p,1039b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2012/texmf-dist
+/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/public/cm-super/sftt1200.pfb>
+Output written on finalreport.pdf (37 pages, 2777530 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

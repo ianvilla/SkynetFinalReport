@@ -554,9 +554,16 @@ By taking snapshots while climbing at the center, we were able to sometimes get 
 \subsubsection{Phase 2 testing}
 %%%%% Akshay please add everything you can about the flight testing of Phase 2 here %%%%%
 % Step 1: adding phase 2 simple
+The whole algorithm for refining the position estimates of the targets was designed in MATLAB. The use of intrinsic MATLAB functions and the complexity of the code made porting the full code to C for the APM a challenging task. To ensure that we minimize the number of bugs and logic errors made during the process of porting the code, we first designed an outrageously simple algorithm for phase 2 as a base case and built all of the complexity on top of this simple base case. \\
+
+Once phase 1 was tested and we were confident that it would work in most cases, the simple version of phase 2 was added. The first iteration did not have any snapshot functionality or intelligent way of choosing the order in which the targets were refined. Once this was working well, we added the snapshot functionality and made sure that we were able to do a complete mission. \\
+
 % Step 2: removing phase 2 simple and adding all of the refinement
-% what sections were tested first, second, third, etc...
+After testing the simple version of phase 2, we ported our full algorithm for phase 2 and tested it on the computer before moving it to the APM. The integration of the full phase 2 code with the APM software caused some issues. These were mainly because we were trying to reduce the memory footprint of our code as much as possible. \\
+
 % Problems we had: Flash memory issue with storing snapshots, the dreaded unsigned int...
+The biggest issue with our refinement logic was the necessity to store all our snapshot data as opposed to keeping a running average of all the camera estimate and relying just on gaussian convergence. We ran into a lot of issues with the RAM limit and the APM board overwriting some data. We fixed this issue first by reducing the amount of internal memory used in our code and by moving some of our constant arrays (gains, control limits, etc.) to the program memory and reading it when needed. Although this made our code better, we still had some issues that were caused by assigning a negative number to a flag that was defined as an unsigned integer. Once we fixed these issues, we were able to complete a full mission and get very high refinement scores. \\
+
 %%%%% Akshay please add everything you can about the flight testing of Phase 2 here %%%%%
 
 \subsection{Simulation vs. Actual Tests}
